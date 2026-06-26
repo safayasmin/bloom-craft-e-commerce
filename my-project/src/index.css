@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@import "tailwindcss";
+
+body {
+  background-color: #131313;
+  color: #e2e2e2;
+}
+
+.glass-panel {
+  background: rgba(25, 25, 25, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(233, 195, 73, 0.15);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+
+  transition: all 0.4s ease;
+}
+
+.glass-panel:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(233, 195, 73, 0.4);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(233, 195, 73, 0.08);
+}
+
+
+
+
+/* Testimonials Classes */
+
+.py-stack-lg {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.bg-surface-container-low {
+  background-color: #181818;
+}
+
+.px-margin-desktop {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.text-primary {
+  color: #e9c349;
+}
+
+.text-secondary {
+  color: #e9c349;
+}
+
+.text-on-surface {
+  color: #ffffff;
+}
+
+.text-on-surface-variant {
+  color: #9ca3af;
+}
+
+.bg-outline-variant {
+  background-color: #4b5563;
+}
+
+.bg-primary {
+  background-color: #e9c349;
+}
+
+.font-headline-md {
+  font-family: "Playfair Display", serif;
+}
+
+.font-label-sm {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.font-body-md {
+  font-family: "Inter", sans-serif;
+}
+
+.text-headline-md {
+  font-size: 1.75rem;
+  line-height: 1.6;
+}
+
+
+
+/* Footer Classes */
+
+.pt-stack-lg {
+  padding-top: 64px;
+}
+
+.pb-stack-md {
+  padding-bottom: 32px;
+}
+
+.mt-stack-lg {
+  margin-top: 64px;
+}
+
+.pt-stack-sm {
+  padding-top: 16px;
+}
+
+.gap-gutter {
+  gap: 24px;
+}
+
+.max-w-container-max {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.bg-surface-container-lowest {
+  background-color: #0e0e0e;
+}
+
+.border-outline-variant {
+  border-color: #5a403e;
+}
+
+.font-display-lg-mobile {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.text-display-lg-mobile {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.text-body-md {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+

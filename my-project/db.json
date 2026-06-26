@@ -1,0 +1,211 @@
+{
+  "Products": [
+    {
+      "id": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "category": "realflower"
+    },
+    {
+      "id": "2",
+      "title": "Wildflowers",
+      "price": 1799,
+      "img": "/images/rflower2.png",
+      "category": "realflower"
+    },
+    {
+      "id": "3",
+      "title": "Pink roses",
+      "price": 1999,
+      "img": "/images/rflower3.png",
+      "category": "realflower"
+    },
+    {
+      "id": "4",
+      "title": "sunflower",
+      "price": 2499,
+      "img": "/images/rflower4.png",
+      "category": "realflower"
+    },
+    {
+      "id": "5",
+      "title": "Blue hydrangeas flower",
+      "price": 1599,
+      "img": "/images/rflower5.png",
+      "category": "realflower"
+    },
+    {
+      "id": "6",
+      "title": "White and pink flowers",
+      "price": 1899,
+      "img": "/images/rflower6.png",
+      "category": "realflower"
+    },
+    {
+      "id": "7",
+      "title": "Bouquet of lilies flower",
+      "price": 2199,
+      "img": "/images/rflower7.png",
+      "category": "realflower"
+    },
+    {
+      "id": "8",
+      "title": "Blue delphiniums flowers",
+      "price": 2599,
+      "img": "/images/rflower8.png",
+      "category": "realflower"
+    },
+    {
+      "id": "9",
+      "title": "Crochet sunFlower Bouquet",
+      "price": 999,
+      "img": "/images/cflower1.png",
+      "category": "crochet"
+    },
+    {
+      "id": "10",
+      "title": "Handmade roses Set",
+      "price": 899,
+      "img": "/images/cflower2.png",
+      "category": "crochet"
+    },
+    {
+      "id": "11",
+      "title": "soft flower crochet",
+      "price": 1099,
+      "img": "/images/cflower3.png",
+      "category": "crochet"
+    },
+    {
+      "id": "12",
+      "title": "White Lily Crochet",
+      "price": 1199,
+      "img": "/images/cflower4.png",
+      "category": "crochet"
+    },
+    {
+      "id": "13",
+      "title": "Mini Crochet Bouquet",
+      "price": 799,
+      "img": "/images/cflower5.png",
+      "category": "crochet"
+    },
+    {
+      "id": "14",
+      "title": "Elegant Crochet Orchid",
+      "price": 1299,
+      "img": "/images/cflower6.png",
+      "category": "crochet"
+    },
+    {
+      "id": "15",
+      "title": "Vintage Crochet Roses",
+      "price": 1399,
+      "img": "/images/cflower7.png",
+      "category": "crochet"
+    },
+    {
+      "id": "16",
+      "title": "Colorful Yarn Bouquet",
+      "price": 999,
+      "img": "/images/cflower8.png",
+      "category": "crochet"
+    },
+    {
+      "id": "17",
+      "title": "Wedding Ring Box",
+      "price": 1999,
+      "img": "/images/wflower5.png",
+      "category": "wedding"
+    },
+    {
+      "id": "18",
+      "title": "Bridal Bouquet Keepsake",
+      "price": 2499,
+      "img": "/images/rflower2.png",
+      "category": "wedding"
+    },
+    {
+      "id": "19",
+      "title": "Wedding Memory Frame",
+      "price": 1799,
+      "img": "/images/wflower6.png",
+      "category": "wedding"
+    },
+    {
+      "id": "20",
+      "title": "sunflower",
+      "price": 1599,
+      "img": "/images/rflower4.png",
+      "category": "wedding"
+    },
+    {
+      "id": "21",
+      "title": "Wedding Candle Set",
+      "price": 1299,
+      "img": "/images/wflower1.png",
+      "category": "wedding"
+    },
+    {
+      "id": "22",
+      "title": "Engagement Photo Frame",
+      "price": 1499,
+      "img": "/images/wflower2.png",
+      "category": "wedding"
+    },
+    {
+      "id": "23",
+      "title": "Bride Keepsake Box",
+      "price": 1899,
+      "img": "/images/wflower3.png",
+      "category": "wedding"
+    },
+    {
+      "id": "24",
+      "title": "Golden Wedding Decor",
+      "price": 2999,
+      "img": "/images/wflower4.png",
+      "category": "wedding"
+    }
+  ],
+  "users": [
+    {
+      "username": "safa",
+      "fullName": "yasmin",
+      "email": "safa123@gmail.com",
+      "password": "safa123",
+      "avatar": "https://i.pravatar.cc/150?u=safa123@gmail.com",
+      "createdAt": "2026-06-21T06:41:35.598Z",
+      "id": "hO892ZydJ_g",
+      "cart":[
+      {
+      "id": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "category": "realflower"
+      }
+      ]
+    },
+    {
+      "username": "safa",
+      "fullName": "yasmin",
+      "email": "safa1234@gmail.com",
+      "password": "safa1234",
+      "avatar": "https://i.pravatar.cc/150?u=safa1234@gmail.com",
+      "createdAt": "2026-06-21T06:43:21.665Z",
+      "id": "TsEDMRXS2mE"
+    },
+    {
+      "username": "safa",
+      "fullName": "yasmin",
+      "email": "safa12345@gmail.com",
+      "password": "safa12345",
+      "avatar": "https://i.pravatar.cc/150?u=safa12345@gmail.com",
+      "createdAt": "2026-06-25T05:34:55.005Z",
+      "id": "3cpp3iVHu8g"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

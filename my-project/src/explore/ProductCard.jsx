@@ -1,53 +1,110 @@
+
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { useShop } from "../context/ShopContext";
+
+import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { setWishlist } from "../redux/wishlistSlice";
+import { setCart } from "../redux/cartSlice";
+
 import { useAuth } from "../contexts/AuthContext";
+import toast from "react-hot-toast";
 
 const ProductCard = ({ product, index = 0 }) => {
   const navigate = useNavigate();
   const { user } = useAuth();
 
-  const {
-    addToCart,
-    toggleWishlist,
-    wishlist,
-    // safa
-  } = useShop();
+const dispatch = useDispatch();
+
+const wishlist = useSelector(
+  (state) => state.wishlist.wishlist
+);
 
 
+const cart = useSelector(
+  (state) => state.cart.cart
+);
+
+const isInCart = cart.some(
+  (item) => item.productId === product.id
+);
 
 //   some()
 // JavaScript Array Method.
-
-// Question ചോദിക്കും
-
 // Array-ൽ കുറഞ്ഞത് ഒരു item condition satisfy ചെയ്യുന്നുണ്ടോ
   
 
   const isWishlisted = wishlist.some(
-    (item) => item.id === product.id
+  (item) => item.productId === product.id
+);
+
+ 
+const handleCart = async () => {
+  if (isInCart) {
+    toast.success("Item already in cart")
+    return
+  };
+  if (!user) {
+    navigate("/login");
+    return;
+  }
+
+  const res = await axios.get(
+    `http://localhost:5000/cart?userId=${user.id}&productId=${product.id}`
   );
 
-  const handleCart = () => {
-  if (!user) {
-    navigate("/login");
+  if (res.data.length > 0) {
     return;
   }
 
-  // addToCart(product);
-   safa(product);
-  // navigate("/cart");
+  await axios.post("http://localhost:5000/cart", {
+    userId: user.id,
+    productId: product.id,
+    title: product.title,
+    price: product.price,
+    img: product.img,
+    category: product.category,
+    quantity: 1,
+  });
+
+  const updated = await axios.get(
+    `http://localhost:5000/cart?userId=${user.id}`
+  );
+
+  dispatch(setCart(updated.data));
 };
 
-  const handleWishlist = () => {
+
+const handleWishlist = async () => {
+  if (isWishlisted) return;
   if (!user) {
     navigate("/login");
     return;
   }
 
-  toggleWishlist(product);
-  navigate("/wishlist");
+  const res = await axios.get(
+    `http://localhost:5000/wishlist?userId=${user.id}&productId=${product.id}`
+  );
+
+  if (res.data.length > 0) {
+    return;
+  }
+
+  await axios.post("http://localhost:5000/wishlist", {
+    userId: user.id,
+    productId: product.id,
+    title: product.title,
+    price: product.price,
+    img: product.img,
+    category: product.category,
+  });
+
+  const updated = await axios.get(
+    `http://localhost:5000/wishlist?userId=${user.id}`
+  );
+
+  dispatch(setWishlist(updated.data));
 };
 
   return (
@@ -107,8 +164,9 @@ const ProductCard = ({ product, index = 0 }) => {
           />
 
           {/* Wishlist */}
-          <button
-            onClick={handleWishlist}
+         <button
+       onClick={handleWishlist}
+        disabled={isWishlisted}
             className="
               absolute
               top-4
@@ -150,12 +208,10 @@ const ProductCard = ({ product, index = 0 }) => {
             {product.category}
           </span>
 
-
-          
-
           {/* Add To Cart */}
-          <button
-            onClick={handleCart}
+        <button
+  onClick={handleCart}
+  disabled={isInCart}
             className="
               absolute
               left-4
@@ -173,7 +229,7 @@ const ProductCard = ({ product, index = 0 }) => {
               hover:bg-yellow-400
             "
           >
-            Add To Cart
+          {isInCart ? "Added To Cart" : "Add To Cart"}
           </button>
         </div>
 

@@ -1,15 +1,18 @@
 
 import React, { useState } from "react";
 import Navbar from "../component/Navbar";
-import { useShop } from "../context/ShopContext";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
+import { useDispatch, useSelector } from "react-redux";
+import axios from "axios";
+import { clearCart } from "../redux/cartSlice";
 
 const Checkout = () => {
-  const { cart, clearCart } = useShop();
+  
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const { user } = useAuth();
-
+ const cart = useSelector(state => state.cart.cart)
 
   const [form, setForm] = useState({
     fullName: "",
@@ -23,7 +26,7 @@ const Checkout = () => {
 
   const [popup, setPopup] = useState({
     show: false,
-    message: "",
+    message: "", 
     type: "",
   });
 
@@ -41,7 +44,7 @@ const Checkout = () => {
   }
 
   const total = cart.reduce(
-    (sum, item) => sum + item.price * item.qty,
+    (sum, item) => sum + item.price * item.quantity,
     0
   );
 
@@ -98,29 +101,56 @@ const handleSubmit = async () => {
 
 
   if (form.payment === "cash") {
-    const newOrder = {
-      items: cart,
-      total,
-      payment: "cash",
-      orderId: Date.now(),
-      userEmail: user?.email,
-    };
+   
 
-    const oldOrders =
-      JSON.parse(localStorage.getItem("orders")) || [];
+ const newOrder = {
+  orderId: Date.now(),
 
-     oldOrders.push(newOrder);
+  user: user.id,
+  userId: user.id,
+  username: user.username,
+  email: user.email,
 
-    localStorage.setItem(
-      "orders",
-      JSON.stringify(oldOrders)
-    );
+  payment: "Cash on Delivery",
 
-    await clearCart();
+  total,
 
-    navigate("/order-success", {
-      state: newOrder,
-    });
+  productCount: cart.length,
+
+  items: cart,    // items use cheyyuka
+
+
+
+    address: {
+    fullName: form.fullName,
+    phone: form.phone,
+    address: form.address,
+    city: form.city,
+    state: form.state,
+    pincode: form.pincode,
+  },
+
+  // 👇 Add this
+  // status: "Order Placed",
+
+  createdAt: new Date().toISOString(),
+};
+
+
+await axios.post("http://localhost:5000/orders", newOrder);
+
+// Cart database-il ninn products delete cheyyuka
+for (const item of cart) {
+  await axios.delete(`http://localhost:5000/cart/${item.id}`);
+}
+
+// Redux cart clear
+dispatch(clearCart());
+
+navigate("/order-success", {
+  state: newOrder,
+  // newOrder next page-lek send cheyyunnu.
+});
 
     return;
   }
@@ -278,11 +308,11 @@ const handleSubmit = async () => {
                     </p>
 
                     <p>
-                      Qty : {item.qty}
+                      Qty : {item.quantity}
                     </p>
 
                     <p className="font-semibold">
-                      ₹{item.price * item.qty}
+                      ₹{item.price * item.quantity}
                     </p>
                   </div>
                 </div>

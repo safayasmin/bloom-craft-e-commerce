@@ -7,7 +7,7 @@ const Categories = () => {
       id: 1,
       title: "Real Flowers",
       image: "/images/rflowercard.png",
-      link: "/flowers",
+      link: "/realflower",
     },
     {
       id: 2,

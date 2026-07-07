@@ -11,8 +11,11 @@ export const registerUser = async (userData) => {
 // LOGIN
 export const loginUser = async (email, password) => {
   const res = await axios.get(
-    `${API}/users?email=${email}&password=${password}`
+    `${API}/users?email=${email}`
   );
+if(res.data[0].password !== password){
+  throw new Error("Password do not match")
+}  
   return res.data[0];
 };
 

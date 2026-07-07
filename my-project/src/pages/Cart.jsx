@@ -1,6 +1,15 @@
 import React, { useEffect } from "react";
 import Navbar from "../component/Navbar";
-import { useShop } from "../context/ShopContext";
+
+import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  decreaseQuantity,
+  increaseQuantity,
+  removeFromCart,
+  setCart,
+} from "../redux/cartSlice";
+
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 
@@ -8,25 +17,61 @@ const Cart = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
 
-  const {
-    cart,
-    increaseQty,
-    decreaseQty,
-    removeFromCart,
-  } = useShop();
+  const dispatch = useDispatch();
+
+const cart = useSelector(
+  (state) => state.cart.cart
+);
+
 
   useEffect(() => {
-    if (!user) {
-      navigate("/login", { replace: true });
-    }
-  }, [user, navigate]);
+  if (!user) {
+    navigate("/login", { replace: true });
+    return;
+  }
 
-  const totalItems = cart.reduce((total, item) => total + item.qty, 0);
+  const loadCart = async () => {
+    const res = await axios.get(
+      `http://localhost:5000/cart?userId=${user.id}`
+    );
+    dispatch(setCart(res.data));
+  };
+
+  loadCart();
+}, [user, dispatch]);
+
+
+  const totalItems = cart.reduce(
+  (total, item) => total + item.quantity,
+  0
+);
 
   const totalPrice = cart.reduce(
-    (total, item) => total + item.price * item.qty,
+    (total, item) => total + item.price * item.quantity,
     0
   );
+  const handleRemove = async (id) => {
+  await axios.delete(`http://localhost:5000/cart/${id}`);
+  dispatch(removeFromCart(id));
+};
+
+const handleIncrease = async (p) => {
+  await axios.patch(`http://localhost:5000/cart/${p.id}`, {
+    quantity: p.quantity + 1,
+  });
+
+  dispatch(increaseQuantity(p.productId));
+};
+
+const handleDecrease = async (p) => {
+  if (p.quantity === 1) return;
+
+  await axios.patch(`http://localhost:5000/cart/${p.id}`, {
+    quantity: p.quantity - 1,
+  });
+
+  dispatch(decreaseQuantity(p.productId));
+};
 
   return (
     <>
@@ -69,30 +114,31 @@ const Cart = () => {
 
                     <div className="flex items-center gap-4 mt-5">
                       <button
-                        onClick={() => decreaseQty(p.id)}
+                       onClick={() => handleDecrease(p)}
+
                         className="w-10 h-10 bg-gray-700 text-white rounded-lg"
                       >
                         -
                       </button>
 
                       <span className="text-white text-xl">
-                        {p.qty}
+                        {p?.quantity}
                       </span>
 
                       <button
-                        onClick={() => increaseQty(p.id)}
+                       onClick={() => handleIncrease(p)}
                         className="w-10 h-10 bg-gray-700 text-white rounded-lg"
                       >
-                        +
+                      +
                       </button>
                     </div>
 
                     <p className="text-white mt-5">
-                      Subtotal: ₹{p.price * p.qty}
+                      Subtotal: ₹{p.price * p.quantity}
                     </p>
 
                     <button
-                      onClick={() => removeFromCart(p.id)}
+                      onClick={() => handleRemove(p.id)}
                       className="text-red-500 mt-3"
                     >
                     Remove

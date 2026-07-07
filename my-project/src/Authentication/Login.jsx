@@ -1,22 +1,11 @@
-
-
-
-
 import { useState, useEffect } from "react";
-import {
-  Link,
-  useNavigate,
-  useLocation,
-} from "react-router-dom";
-
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
-
 import { useAuth } from "../contexts/AuthContext";
-import { useShop } from "../context/ShopContext";
+
 
 const Login = () => {
   const { login, user } = useAuth();
-  const { addToCart, toggleWishlist } = useShop();
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -28,10 +17,9 @@ const Login = () => {
     password: "",
   });
 
-  // ✅ After login redirect to wishlist/cart
+// After login redirect to wishlist/cart
  useEffect(() => {
   if (!user) return;
-
   const from = location.state?.from || "/home";
 
   navigate(from, { replace: true });
@@ -44,7 +32,6 @@ const Login = () => {
 
     try {
       await login(form.email, form.password);
-
       toast.success("Login Success");
 
       // Normal login → Home

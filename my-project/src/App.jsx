@@ -5,9 +5,7 @@ import Home from "./component/Home";
 
 import Category from "./category/Category";
 import About from "./about/About";
-import Page from "./realflrpage/Page";
-import Crochet from "./crochet/Crochet";
-import Wedding from "./wedding/Wedding";
+
 
 import Wishlist from "./pages/Wishlist";
 import Cart from "./pages/Cart";
@@ -21,30 +19,75 @@ import ExploreHome from "./explore/Explorehome";
 import Razorpay from "./pages/Razorpay";
 import OrderSuccess from "./pages/OrderSuccess";
 import Orders from "./pages/Orders";
-import Filtering from "./filtering/Filtering";
+import { useDispatch, useSelector } from "react-redux";
+import { setCart } from "./redux/cartSlice";
+import { useAuth } from "./contexts/AuthContext";
+import { useEffect } from "react";
+import axios from "axios";
+import { setWishlist } from "./redux/wishlistSlice";
+import CategoryPage from "./pages/CategoryPages";
+import AdminLayout from "./admin/components/AdminLayout";
+import Dashboard from "./admin/dashboard/Dashboard";
+
+import Products from "./admin/products/Products";
+import AddProduct from "./admin/products/AddProduct";
+import EditProduct from "./admin/products/EditProduct";
+import Users from "./admin/users/Users";
+
+
 
 
 function App() {
+  const { user } = useAuth();
+
+  const dispatch = useDispatch();
+
+const cart = useSelector(
+  (state) => state.cart.cart
+);
+
+  useEffect(() => {
+  if (!user) {
+    return;
+  }
+
+  const loadCart = async () => {
+    const res = await axios.get(
+      `http://localhost:5000/cart?userId=${user.id}`
+    );
+    dispatch(setCart(res.data));
+
+    const wishlistRes = await axios.get(
+   `http://localhost:5000/wishlist?userId=${user.id}`
+     );
+
+    dispatch(setWishlist(wishlistRes.data));
+  };
+
+  loadCart();
+}, [user, dispatch]);
+
   return (
     <>
       <Toaster position="top-right" />
-
       <BrowserRouter>
         <Routes>
-          <Route path="/filtering" element={<Filtering />}/>
+
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/category" element={<Category />} />
     
           <Route path="/about" element={<About />} />
-          <Route path="/flowers" element={<Page />} />
-          <Route path="/crochet" element={<Crochet />} />
-          <Route path="/wedding" element={<Wedding />} />
+          <Route path="/:category" element={<CategoryPage />}/>
 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
 
-          <Route path="/wishlist" element={<Wishlist />} />
+          <Route
+  path="/wishlist" element={
+    <ProtectedRoute>
+      <Wishlist />
+    </ProtectedRoute>}/>
 
           <Route
             path="/cart"
@@ -71,6 +114,18 @@ function App() {
           <Route path="/order-success" element={<OrderSuccess />} />
 
           <Route path="/orders" element={<Orders />} />
+
+
+         <Route path="/admin" element={<AdminLayout />}>
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="products" element={<Products />} />
+            <Route path="add-product" element={<AddProduct />} />
+            <Route path="edit-product/:id" element={<EditProduct />} />
+             <Route path="users" element={<Users />} />
+
+
+          </Route>
+         
         </Routes>
       </BrowserRouter>
     </>

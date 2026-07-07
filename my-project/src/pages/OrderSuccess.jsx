@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const OrderSuccess = () => {
   const { state } = useLocation();
+  // Current page-ne kurichulla information tharunnu
   const navigate = useNavigate();
 
   return (

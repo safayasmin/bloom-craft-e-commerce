@@ -67,7 +67,7 @@ const Curatedcln = () => {
             {/* Glow */}
             <div className="absolute inset-0 bg-[#d4af37]/0 group-hover:bg-[#d4af37]/10 transition duration-500"></div>
 
-            {/* Content */}
+           
             <div className="absolute bottom-0 left-0 p-10 z-30">
 
               <span className="uppercase tracking-[4px] text-[#d4af37] text-xs">

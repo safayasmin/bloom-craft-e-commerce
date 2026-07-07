@@ -1,16 +1,27 @@
-
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
+import axios from "axios";
 
 const Orders = () => {
+  const [orders, setOrders] = useState([]);
   const { user } = useAuth();
 
-  const allOrders =
-    JSON.parse(localStorage.getItem("orders")) || [];
+  useEffect(() => {
+    if (!user) return;
 
-  const orders = allOrders.filter(
-    (order) => order.userEmail === user?.email
-  );
+    const fetchOrders = async () => {
+      try {
+        const res = await axios.get(
+          `http://localhost:5000/orders?user=${user.id}`
+        );
+        setOrders(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    fetchOrders();
+  }, [user]);
 
   return (
     <div className="min-h-screen relative overflow-hidden">
@@ -79,8 +90,51 @@ const Orders = () => {
                         </p>
                       </div>
                     </div>
-                  ))}
+                  ))} 
                 </div>
+
+
+
+
+                
+
+                {order.address && (
+  <div className="mt-6 bg-black/30 border border-[#d4af37]/30 rounded-lg p-4">
+    <h2 className="text-[#d4af37] text-lg font-bold mb-3">
+      Delivery Address
+    </h2>
+
+    <p className="text-white">
+      <span className="font-semibold">Name:</span>{" "}
+      {order.address.fullName}
+    </p>
+
+    <p className="text-white">
+      <span className="font-semibold">Phone:</span>{" "}
+      {order.address.phone}
+    </p>
+
+    <p className="text-white">
+      <span className="font-semibold">Address:</span>{" "}
+      {order.address.address}
+    </p>
+
+    <p className="text-white">
+      <span className="font-semibold">City:</span>{" "}
+      {order.address.city}
+    </p>
+
+    <p className="text-white">
+      <span className="font-semibold">State:</span>{" "}
+      {order.address.state}
+    </p>
+
+    <p className="text-white">
+      <span className="font-semibold">Pincode:</span>{" "}
+      {order.address.pincode}
+    </p>
+  </div>
+)} 
 
               </div>
             ))}

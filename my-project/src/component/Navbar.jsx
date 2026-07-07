@@ -3,11 +3,22 @@ import React, { useState } from "react";
 import { FiHeart, FiShoppingCart, FiUser ,  FiMenu, FiX,
 } from "react-icons/fi";
 import { Link, useNavigate } from "react-router-dom";
-import { useShop } from "../context/ShopContext";
+import { useSelector } from "react-redux";
 import { useAuth } from "../contexts/AuthContext";
 
+
 const Navbar = () => {
-  const { wishlist, cart } = useShop();
+
+
+
+  const wishlist = useSelector(
+  (state) => state.wishlist.wishlist
+);
+
+const cart = useSelector(
+  (state) => state.cart.cart
+);
+
   const { user, logout, loading } = useAuth();
   const navigate = useNavigate();
 

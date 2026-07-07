@@ -167,6 +167,15 @@
       "price": 2999,
       "img": "/images/wflower4.png",
       "category": "wedding"
+    },
+    {
+      "title": "rose123",
+      "category": "crochet",
+      "price": "2000",
+      "stock": "6",
+      "img": "images",
+      "description": "super\n",
+      "id": "cIDkWWF-Axc"
     }
   ],
   "users": [
@@ -176,17 +185,8 @@
       "email": "safa123@gmail.com",
       "password": "safa123",
       "avatar": "https://i.pravatar.cc/150?u=safa123@gmail.com",
-      "createdAt": "2026-06-21T06:41:35.598Z",
-      "id": "hO892ZydJ_g",
-      "cart":[
-      {
-      "id": "1",
-      "title": "White anemones",
-      "price": 1499,
-      "img": "/images/rflower1.png",
-      "category": "realflower"
-      }
-      ]
+      "createdAt": "2026-07-02T04:35:22.786Z",
+      "id": "KugLJIg_0_o"
     },
     {
       "username": "safa",
@@ -194,8 +194,17 @@
       "email": "safa1234@gmail.com",
       "password": "safa1234",
       "avatar": "https://i.pravatar.cc/150?u=safa1234@gmail.com",
-      "createdAt": "2026-06-21T06:43:21.665Z",
-      "id": "TsEDMRXS2mE"
+      "createdAt": "2026-07-03T04:38:46.579Z",
+      "id": "h9ItbNO4jmI"
+    },
+    {
+      "username": "bishir",
+      "fullName": "k",
+      "email": "bishir@gmail.com",
+      "password": "123456",
+      "avatar": "https://i.pravatar.cc/150?u=bishir@gmail.com",
+      "createdAt": "2026-07-03T06:32:14.999Z",
+      "id": "8YEQZnk7v0M"
     },
     {
       "username": "safa",
@@ -203,8 +212,1262 @@
       "email": "safa12345@gmail.com",
       "password": "safa12345",
       "avatar": "https://i.pravatar.cc/150?u=safa12345@gmail.com",
-      "createdAt": "2026-06-25T05:34:55.005Z",
-      "id": "3cpp3iVHu8g"
+      "createdAt": "2026-07-04T09:45:49.695Z",
+      "id": "CeDfAgTbkNU"
+    },
+    {
+      "username": "sabira",
+      "fullName": "kp",
+      "email": "sabira@gmail.com",
+      "password": "sabira",
+      "avatar": "https://i.pravatar.cc/150?u=sabira@gmail.com",
+      "createdAt": "2026-07-06T06:20:24.862Z",
+      "id": "KaBXDQwxJ10"
+    }
+  ],
+  "cart": [
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "category": "realflower",
+      "quantity": 1,
+      "id": "RQuD6xeYTlE"
+    },
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "8",
+      "title": "Blue delphiniums flowers",
+      "price": 2599,
+      "img": "/images/rflower8.png",
+      "category": "realflower",
+      "quantity": 1,
+      "id": "T3nHh2zsttg"
+    },
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "7",
+      "title": "Bouquet of lilies flower",
+      "price": 2199,
+      "img": "/images/rflower7.png",
+      "category": "realflower",
+      "quantity": 1,
+      "id": "Hn_vmQ2wTzY"
+    },
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "9",
+      "title": "Crochet sunFlower Bouquet",
+      "price": 999,
+      "img": "/images/cflower1.png",
+      "category": "crochet",
+      "quantity": 1,
+      "id": "uJ4rDTWpsDo"
+    },
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "10",
+      "title": "Handmade roses Set",
+      "price": 899,
+      "img": "/images/cflower2.png",
+      "category": "crochet",
+      "quantity": 1,
+      "id": "XaoI8D2rsIM"
+    },
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "11",
+      "title": "soft flower crochet",
+      "price": 1099,
+      "img": "/images/cflower3.png",
+      "category": "crochet",
+      "quantity": 1,
+      "id": "wpTDGAhhQmY"
+    },
+    {
+      "id": "ykqnKdIcgwA"
+    },
+    {
+      "id": "N_SZdzg7Oh8"
+    },
+    {
+      "id": "kVs2yzAoz4Y"
+    },
+    {
+      "id": "35W6bjcq8PE"
+    },
+    {
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "id": "OIA7c5RkORE"
+    },
+    {
+      "productId": "2",
+      "title": "Wildflowers",
+      "price": 1799,
+      "img": "/images/rflower2.png",
+      "id": "TbHqbO0YQ1A"
+    },
+    {
+      "productId": "3",
+      "title": "Pink roses",
+      "price": 1999,
+      "img": "/images/rflower3.png",
+      "id": "oyxr5TxY6xs"
+    },
+    {
+      "productId": "4",
+      "title": "sunflower",
+      "price": 2499,
+      "img": "/images/rflower4.png",
+      "id": "vq9rKrr0uwI"
+    },
+    {
+      "productId": "5",
+      "title": "Blue hydrangeas flower",
+      "price": 1599,
+      "img": "/images/rflower5.png",
+      "id": "LYDdbYruG14"
+    },
+    {
+      "productId": "6",
+      "title": "White and pink flowers",
+      "price": 1899,
+      "img": "/images/rflower6.png",
+      "id": "Cuker9HcFBw"
+    },
+    {
+      "productId": "7",
+      "title": "Bouquet of lilies flower",
+      "price": 2199,
+      "img": "/images/rflower7.png",
+      "id": "644wWSlvX_4"
+    },
+    {
+      "productId": "8",
+      "title": "Blue delphiniums flowers",
+      "price": 2599,
+      "img": "/images/rflower8.png",
+      "id": "1nX0YsXHKOA"
+    },
+    {
+      "productId": "9",
+      "title": "Crochet sunFlower Bouquet",
+      "price": 999,
+      "img": "/images/cflower1.png",
+      "id": "YNggmAVFafw"
+    },
+    {
+      "productId": "10",
+      "title": "Handmade roses Set",
+      "price": 899,
+      "img": "/images/cflower2.png",
+      "id": "GMVSiFLm2Qk"
+    },
+    {
+      "productId": "11",
+      "title": "soft flower crochet",
+      "price": 1099,
+      "img": "/images/cflower3.png",
+      "id": "p7RR26cRqfk"
+    },
+    {
+      "productId": "12",
+      "title": "White Lily Crochet",
+      "price": 1199,
+      "img": "/images/cflower4.png",
+      "id": "fna-V_JWZzE"
+    },
+    {
+      "productId": "13",
+      "title": "Mini Crochet Bouquet",
+      "price": 799,
+      "img": "/images/cflower5.png",
+      "id": "Bi-kM3MoI7k"
+    },
+    {
+      "productId": "14",
+      "title": "Elegant Crochet Orchid",
+      "price": 1299,
+      "img": "/images/cflower6.png",
+      "id": "CL5jx25EwYQ"
+    },
+    {
+      "productId": "15",
+      "title": "Vintage Crochet Roses",
+      "price": 1399,
+      "img": "/images/cflower7.png",
+      "id": "Q5vUDLUFwyA"
+    },
+    {
+      "productId": "16",
+      "title": "Colorful Yarn Bouquet",
+      "price": 999,
+      "img": "/images/cflower8.png",
+      "id": "1z_2cS15sbc"
+    },
+    {
+      "productId": "17",
+      "title": "Wedding Ring Box",
+      "price": 1999,
+      "img": "/images/wflower5.png",
+      "id": "y38FIB9oOnU"
+    },
+    {
+      "productId": "18",
+      "title": "Bridal Bouquet Keepsake",
+      "price": 2499,
+      "img": "/images/rflower2.png",
+      "id": "lZRd90oDVCU"
+    },
+    {
+      "productId": "19",
+      "title": "Wedding Memory Frame",
+      "price": 1799,
+      "img": "/images/wflower6.png",
+      "id": "DfO7Olv942U"
+    },
+    {
+      "productId": "20",
+      "title": "sunflower",
+      "price": 1599,
+      "img": "/images/rflower4.png",
+      "id": "jBXWLg0Me78"
+    },
+    {
+      "productId": "21",
+      "title": "Wedding Candle Set",
+      "price": 1299,
+      "img": "/images/wflower1.png",
+      "id": "_pkRizSyS-Y"
+    },
+    {
+      "productId": "22",
+      "title": "Engagement Photo Frame",
+      "price": 1499,
+      "img": "/images/wflower2.png",
+      "id": "OMnYSfvz6u4"
+    },
+    {
+      "productId": "23",
+      "title": "Bride Keepsake Box",
+      "price": 1899,
+      "img": "/images/wflower3.png",
+      "id": "iilD2HVC_CM"
+    },
+    {
+      "productId": "24",
+      "title": "Golden Wedding Decor",
+      "price": 2999,
+      "img": "/images/wflower4.png",
+      "id": "NckKRCmlG9E"
+    },
+    {
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "id": "-ErS4-XYX5Q"
+    },
+    {
+      "productId": "2",
+      "title": "Wildflowers",
+      "price": 1799,
+      "img": "/images/rflower2.png",
+      "id": "NwmuJNRCxVA"
+    },
+    {
+      "productId": "3",
+      "title": "Pink roses",
+      "price": 1999,
+      "img": "/images/rflower3.png",
+      "id": "sulSy7zJqlE"
+    },
+    {
+      "productId": "4",
+      "title": "sunflower",
+      "price": 2499,
+      "img": "/images/rflower4.png",
+      "id": "YQF7WkU8yjE"
+    },
+    {
+      "productId": "5",
+      "title": "Blue hydrangeas flower",
+      "price": 1599,
+      "img": "/images/rflower5.png",
+      "id": "YTcqKEta3as"
+    },
+    {
+      "productId": "6",
+      "title": "White and pink flowers",
+      "price": 1899,
+      "img": "/images/rflower6.png",
+      "id": "TgdGwtvA56s"
+    },
+    {
+      "productId": "7",
+      "title": "Bouquet of lilies flower",
+      "price": 2199,
+      "img": "/images/rflower7.png",
+      "id": "0XTdNpkYmOc"
+    },
+    {
+      "productId": "8",
+      "title": "Blue delphiniums flowers",
+      "price": 2599,
+      "img": "/images/rflower8.png",
+      "id": "zllOb9vr0Dk"
+    },
+    {
+      "productId": "9",
+      "title": "Crochet sunFlower Bouquet",
+      "price": 999,
+      "img": "/images/cflower1.png",
+      "id": "7toz-oBU-Q4"
+    },
+    {
+      "productId": "10",
+      "title": "Handmade roses Set",
+      "price": 899,
+      "img": "/images/cflower2.png",
+      "id": "gvYlKPKcPbk"
+    },
+    {
+      "productId": "11",
+      "title": "soft flower crochet",
+      "price": 1099,
+      "img": "/images/cflower3.png",
+      "id": "Km8wA5-Y3Eo"
+    },
+    {
+      "productId": "12",
+      "title": "White Lily Crochet",
+      "price": 1199,
+      "img": "/images/cflower4.png",
+      "id": "rHdVpZmcg8o"
+    },
+    {
+      "productId": "13",
+      "title": "Mini Crochet Bouquet",
+      "price": 799,
+      "img": "/images/cflower5.png",
+      "id": "yT9eadiXsKM"
+    },
+    {
+      "productId": "14",
+      "title": "Elegant Crochet Orchid",
+      "price": 1299,
+      "img": "/images/cflower6.png",
+      "id": "a7c7lnaSRE4"
+    },
+    {
+      "productId": "15",
+      "title": "Vintage Crochet Roses",
+      "price": 1399,
+      "img": "/images/cflower7.png",
+      "id": "VJ_4hUKH6QI"
+    },
+    {
+      "productId": "16",
+      "title": "Colorful Yarn Bouquet",
+      "price": 999,
+      "img": "/images/cflower8.png",
+      "id": "pGZ_p09eEm0"
+    },
+    {
+      "productId": "17",
+      "title": "Wedding Ring Box",
+      "price": 1999,
+      "img": "/images/wflower5.png",
+      "id": "KzwDILN9_gA"
+    },
+    {
+      "productId": "18",
+      "title": "Bridal Bouquet Keepsake",
+      "price": 2499,
+      "img": "/images/rflower2.png",
+      "id": "Z3MmX4NvnY8"
+    },
+    {
+      "productId": "19",
+      "title": "Wedding Memory Frame",
+      "price": 1799,
+      "img": "/images/wflower6.png",
+      "id": "uC9yAcTvtCY"
+    },
+    {
+      "productId": "20",
+      "title": "sunflower",
+      "price": 1599,
+      "img": "/images/rflower4.png",
+      "id": "e01ECkiPw4s"
+    },
+    {
+      "productId": "21",
+      "title": "Wedding Candle Set",
+      "price": 1299,
+      "img": "/images/wflower1.png",
+      "id": "i33Si9zEvX0"
+    },
+    {
+      "productId": "22",
+      "title": "Engagement Photo Frame",
+      "price": 1499,
+      "img": "/images/wflower2.png",
+      "id": "PcLXXEIzEg8"
+    },
+    {
+      "productId": "23",
+      "title": "Bride Keepsake Box",
+      "price": 1899,
+      "img": "/images/wflower3.png",
+      "id": "ITCzLJNQ5dM"
+    },
+    {
+      "productId": "24",
+      "title": "Golden Wedding Decor",
+      "price": 2999,
+      "img": "/images/wflower4.png",
+      "id": "NAX36oJ4O28"
+    },
+    {
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "id": "UOSqSQDsT1s"
+    },
+    {
+      "productId": "3",
+      "title": "Pink roses",
+      "price": 1999,
+      "img": "/images/rflower3.png",
+      "id": "DHeJjHP_NRk"
+    },
+    {
+      "productId": "4",
+      "title": "sunflower",
+      "price": 2499,
+      "img": "/images/rflower4.png",
+      "id": "y4u3uKz9egc"
+    },
+    {
+      "productId": "5",
+      "title": "Blue hydrangeas flower",
+      "price": 1599,
+      "img": "/images/rflower5.png",
+      "id": "u6BLKyK_BpQ"
+    },
+    {
+      "productId": "6",
+      "title": "White and pink flowers",
+      "price": 1899,
+      "img": "/images/rflower6.png",
+      "id": "8iEbUBMtDWc"
+    },
+    {
+      "productId": "2",
+      "title": "Wildflowers",
+      "price": 1799,
+      "img": "/images/rflower2.png",
+      "id": "x10VkxYGY5E"
+    },
+    {
+      "productId": "7",
+      "title": "Bouquet of lilies flower",
+      "price": 2199,
+      "img": "/images/rflower7.png",
+      "id": "vTjx1zggTrE"
+    },
+    {
+      "productId": "8",
+      "title": "Blue delphiniums flowers",
+      "price": 2599,
+      "img": "/images/rflower8.png",
+      "id": "mOJyQTslMtQ"
+    },
+    {
+      "productId": "9",
+      "title": "Crochet sunFlower Bouquet",
+      "price": 999,
+      "img": "/images/cflower1.png",
+      "id": "2fJsfxQzuOU"
+    },
+    {
+      "productId": "10",
+      "title": "Handmade roses Set",
+      "price": 899,
+      "img": "/images/cflower2.png",
+      "id": "qY7XSLSRnow"
+    },
+    {
+      "productId": "11",
+      "title": "soft flower crochet",
+      "price": 1099,
+      "img": "/images/cflower3.png",
+      "id": "-e7nKBerfMU"
+    },
+    {
+      "productId": "12",
+      "title": "White Lily Crochet",
+      "price": 1199,
+      "img": "/images/cflower4.png",
+      "id": "Tcur2qwrAJ4"
+    },
+    {
+      "productId": "13",
+      "title": "Mini Crochet Bouquet",
+      "price": 799,
+      "img": "/images/cflower5.png",
+      "id": "YDK2BjoxIvw"
+    },
+    {
+      "productId": "14",
+      "title": "Elegant Crochet Orchid",
+      "price": 1299,
+      "img": "/images/cflower6.png",
+      "id": "hU-KjuWvmao"
+    },
+    {
+      "productId": "15",
+      "title": "Vintage Crochet Roses",
+      "price": 1399,
+      "img": "/images/cflower7.png",
+      "id": "j-Ks-gp0V_w"
+    },
+    {
+      "productId": "16",
+      "title": "Colorful Yarn Bouquet",
+      "price": 999,
+      "img": "/images/cflower8.png",
+      "id": "gbjDVfiZ6Qw"
+    },
+    {
+      "productId": "17",
+      "title": "Wedding Ring Box",
+      "price": 1999,
+      "img": "/images/wflower5.png",
+      "id": "-6eaePXjsRw"
+    },
+    {
+      "productId": "18",
+      "title": "Bridal Bouquet Keepsake",
+      "price": 2499,
+      "img": "/images/rflower2.png",
+      "id": "qf-jIyLkts8"
+    },
+    {
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "id": "BcL-NIiHaSQ"
+    },
+    {
+      "productId": "2",
+      "title": "Wildflowers",
+      "price": 1799,
+      "img": "/images/rflower2.png",
+      "id": "rYZvHU6x2tg"
+    },
+    {
+      "productId": "3",
+      "title": "Pink roses",
+      "price": 1999,
+      "img": "/images/rflower3.png",
+      "id": "5BLsJGyHMZI"
+    },
+    {
+      "productId": "4",
+      "title": "sunflower",
+      "price": 2499,
+      "img": "/images/rflower4.png",
+      "id": "ZXm7btKmzDY"
+    },
+    {
+      "productId": "5",
+      "title": "Blue hydrangeas flower",
+      "price": 1599,
+      "img": "/images/rflower5.png",
+      "id": "VHdJ5yqoAMg"
+    },
+    {
+      "productId": "6",
+      "title": "White and pink flowers",
+      "price": 1899,
+      "img": "/images/rflower6.png",
+      "id": "UW7sUHzC6Ko"
+    },
+    {
+      "productId": "7",
+      "title": "Bouquet of lilies flower",
+      "price": 2199,
+      "img": "/images/rflower7.png",
+      "id": "Xt4JqNZp4xY"
+    },
+    {
+      "productId": "8",
+      "title": "Blue delphiniums flowers",
+      "price": 2599,
+      "img": "/images/rflower8.png",
+      "id": "jtN48dH57rk"
+    },
+    {
+      "productId": "9",
+      "title": "Crochet sunFlower Bouquet",
+      "price": 999,
+      "img": "/images/cflower1.png",
+      "id": "uJt-cX02tfg"
+    },
+    {
+      "productId": "10",
+      "title": "Handmade roses Set",
+      "price": 899,
+      "img": "/images/cflower2.png",
+      "id": "8sm8kYphOhE"
+    },
+    {
+      "productId": "11",
+      "title": "soft flower crochet",
+      "price": 1099,
+      "img": "/images/cflower3.png",
+      "id": "bL9SXHcQ5ZY"
+    },
+    {
+      "productId": "12",
+      "title": "White Lily Crochet",
+      "price": 1199,
+      "img": "/images/cflower4.png",
+      "id": "ZjHXscOJf5Q"
+    },
+    {
+      "productId": "13",
+      "title": "Mini Crochet Bouquet",
+      "price": 799,
+      "img": "/images/cflower5.png",
+      "id": "-UaVc_jZ7PE"
+    },
+    {
+      "productId": "14",
+      "title": "Elegant Crochet Orchid",
+      "price": 1299,
+      "img": "/images/cflower6.png",
+      "id": "YLCtDLjsN6w"
+    },
+    {
+      "productId": "15",
+      "title": "Vintage Crochet Roses",
+      "price": 1399,
+      "img": "/images/cflower7.png",
+      "id": "bvBDUawMv3Q"
+    },
+    {
+      "productId": "16",
+      "title": "Colorful Yarn Bouquet",
+      "price": 999,
+      "img": "/images/cflower8.png",
+      "id": "u8MW6gYreP0"
+    },
+    {
+      "productId": "17",
+      "title": "Wedding Ring Box",
+      "price": 1999,
+      "img": "/images/wflower5.png",
+      "id": "oHILQwt5ClI"
+    },
+    {
+      "productId": "18",
+      "title": "Bridal Bouquet Keepsake",
+      "price": 2499,
+      "img": "/images/rflower2.png",
+      "id": "Evunxo5EY4E"
+    },
+    {
+      "productId": "19",
+      "title": "Wedding Memory Frame",
+      "price": 1799,
+      "img": "/images/wflower6.png",
+      "id": "bCgyxHm2e1o"
+    },
+    {
+      "productId": "20",
+      "title": "sunflower",
+      "price": 1599,
+      "img": "/images/rflower4.png",
+      "id": "6GCwQmF7GjM"
+    },
+    {
+      "productId": "21",
+      "title": "Wedding Candle Set",
+      "price": 1299,
+      "img": "/images/wflower1.png",
+      "id": "bndDDIiRm4E"
+    },
+    {
+      "productId": "22",
+      "title": "Engagement Photo Frame",
+      "price": 1499,
+      "img": "/images/wflower2.png",
+      "id": "jwFWjp4LjtY"
+    },
+    {
+      "productId": "23",
+      "title": "Bride Keepsake Box",
+      "price": 1899,
+      "img": "/images/wflower3.png",
+      "id": "DUHQMYYFpLA"
+    },
+    {
+      "productId": "24",
+      "title": "Golden Wedding Decor",
+      "price": 2999,
+      "img": "/images/wflower4.png",
+      "id": "f0QQQLOIGCE"
+    },
+    {
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "id": "3aBcK1Zj8qw"
+    },
+    {
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "id": "4dgmCfKWVNg"
+    },
+    {
+      "productId": "5",
+      "title": "Blue hydrangeas flower",
+      "price": 1599,
+      "img": "/images/rflower5.png",
+      "id": "Smng9gqsbeE"
+    }
+  ],
+  "wishlist": [
+    {
+      "userId": "KugLJIg_0_o",
+      "productId": "4",
+      "title": "sunflower",
+      "price": 2499,
+      "img": "/images/rflower4.png",
+      "category": "realflower",
+      "id": "jnwzHUqQEa4"
+    },
+    {
+      "userId": "h9ItbNO4jmI",
+      "productId": "4",
+      "title": "sunflower",
+      "price": 2499,
+      "img": "/images/rflower4.png",
+      "category": "realflower",
+      "id": "Gzb0JrtmUfA"
+    },
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "8",
+      "title": "Blue delphiniums flowers",
+      "price": 2599,
+      "img": "/images/rflower8.png",
+      "category": "realflower",
+      "id": "Hx5fsZng0eE"
+    },
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "category": "realflower",
+      "id": "3U5f5xTiZ3w"
+    },
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "11",
+      "title": "soft flower crochet",
+      "price": 1099,
+      "img": "/images/cflower3.png",
+      "category": "crochet",
+      "id": "04fa-lGQsEQ"
+    },
+    {
+      "userId": "8YEQZnk7v0M",
+      "productId": "10",
+      "title": "Handmade roses Set",
+      "price": 899,
+      "img": "/images/cflower2.png",
+      "category": "crochet",
+      "id": "gC-K_B5ci2M"
+    },
+    {
+      "userId": "h9ItbNO4jmI",
+      "productId": "2",
+      "title": "Wildflowers",
+      "price": 1799,
+      "img": "/images/rflower2.png",
+      "category": "realflower",
+      "id": "wnF5qLdsM4g"
+    },
+    {
+      "userId": "h9ItbNO4jmI",
+      "productId": "3",
+      "title": "Pink roses",
+      "price": 1999,
+      "img": "/images/rflower3.png",
+      "category": "realflower",
+      "id": "0FEsp68-vVw"
+    }
+  ],
+  "orders": [
+    {
+      "orderId": 1782966969730,
+      "user": "KugLJIg_0_o",
+      "userId": "KugLJIg_0_o",
+      "username": "safa",
+      "email": "safa123@gmail.com",
+      "payment": "Razorpay",
+      "total": 7497,
+      "productCount": 1,
+      "items": [
+        {
+          "userId": "KugLJIg_0_o",
+          "productId": "4",
+          "title": "sunflower",
+          "price": 2499,
+          "img": "/images/rflower4.png",
+          "category": "realflower",
+          "quantity": 3,
+          "id": "n5F3ixJD63A"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-02T04:36:09.730Z",
+      "id": "2sLFNv110Z4"
+    },
+    {
+      "orderId": 1783058397892,
+      "user": "h9ItbNO4jmI",
+      "userId": "h9ItbNO4jmI",
+      "username": "safa",
+      "email": "safa1234@gmail.com",
+      "payment": "Cash on Delivery",
+      "total": 7497,
+      "productCount": 1,
+      "items": [
+        {
+          "userId": "h9ItbNO4jmI",
+          "productId": "4",
+          "title": "sunflower",
+          "price": 2499,
+          "img": "/images/rflower4.png",
+          "category": "realflower",
+          "quantity": 3,
+          "id": "Sw3Cue_ORrA"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-03T05:59:57.892Z",
+      "id": "u9O5GHox_bE"
+    },
+    {
+      "orderId": 1783060458756,
+      "user": "8YEQZnk7v0M",
+      "userId": "8YEQZnk7v0M",
+      "username": "bishir",
+      "email": "bishir@gmail.com",
+      "payment": "Cash on Delivery",
+      "total": 11395,
+      "productCount": 2,
+      "items": [
+        {
+          "userId": "8YEQZnk7v0M",
+          "productId": "8",
+          "title": "Blue delphiniums flowers",
+          "price": 2599,
+          "img": "/images/rflower8.png",
+          "category": "realflower",
+          "quantity": 4,
+          "id": "-CNscm81guw"
+        },
+        {
+          "userId": "8YEQZnk7v0M",
+          "productId": "9",
+          "title": "Crochet sunFlower Bouquet",
+          "price": 999,
+          "img": "/images/cflower1.png",
+          "category": "crochet",
+          "quantity": 1,
+          "id": "clmb8XtFtn0"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-03T06:34:18.756Z",
+      "id": "nI--as0eZbk"
+    },
+    {
+      "orderId": 1783060952551,
+      "user": "h9ItbNO4jmI",
+      "userId": "h9ItbNO4jmI",
+      "username": "safa",
+      "email": "safa1234@gmail.com",
+      "payment": "Cash on Delivery",
+      "total": 17493,
+      "productCount": 1,
+      "items": [
+        {
+          "userId": "h9ItbNO4jmI",
+          "productId": "4",
+          "title": "sunflower",
+          "price": 2499,
+          "img": "/images/rflower4.png",
+          "category": "realflower",
+          "quantity": 7,
+          "id": "WNyI6GeGIvc"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-03T06:42:32.551Z",
+      "id": "dUJ9ptx3kxI"
+    },
+    {
+      "orderId": 1783062943135,
+      "user": "h9ItbNO4jmI",
+      "userId": "h9ItbNO4jmI",
+      "username": "safa",
+      "email": "safa1234@gmail.com",
+      "payment": "Cash on Delivery",
+      "total": 3798,
+      "productCount": 2,
+      "items": [
+        {
+          "userId": "h9ItbNO4jmI",
+          "productId": "2",
+          "title": "Wildflowers",
+          "price": 1799,
+          "img": "/images/rflower2.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "OiVCentdYE8"
+        },
+        {
+          "userId": "h9ItbNO4jmI",
+          "productId": "3",
+          "title": "Pink roses",
+          "price": 1999,
+          "img": "/images/rflower3.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "5vaIUklhKxA"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-03T07:15:43.135Z",
+      "id": "fbnoYDntYGE"
+    },
+    {
+      "orderId": 1783063044318,
+      "user": "h9ItbNO4jmI",
+      "userId": "h9ItbNO4jmI",
+      "username": "safa",
+      "email": "safa1234@gmail.com",
+      "payment": "Cash on Delivery",
+      "total": 7796,
+      "productCount": 2,
+      "items": [
+        {
+          "userId": "h9ItbNO4jmI",
+          "productId": "2",
+          "title": "Wildflowers",
+          "price": 1799,
+          "img": "/images/rflower2.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "M04H_OrFeR4"
+        },
+        {
+          "userId": "h9ItbNO4jmI",
+          "productId": "3",
+          "title": "Pink roses",
+          "price": 1999,
+          "img": "/images/rflower3.png",
+          "category": "realflower",
+          "quantity": 3,
+          "id": "M3SUU0O5FMw"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-03T07:17:24.318Z",
+      "id": "iaAms_DQing"
+    },
+    {
+      "orderId": 1783063099261,
+      "user": "h9ItbNO4jmI",
+      "userId": "h9ItbNO4jmI",
+      "username": "safa",
+      "email": "safa1234@gmail.com",
+      "payment": "Cash on Delivery",
+      "total": 1999,
+      "productCount": 1,
+      "items": [
+        {
+          "userId": "h9ItbNO4jmI",
+          "productId": "3",
+          "title": "Pink roses",
+          "price": 1999,
+          "img": "/images/rflower3.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "jUAqnZdWz_s"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-03T07:18:19.261Z",
+      "id": "4x4ea0b0tEw"
+    },
+    {
+      "orderId": 1783154490059,
+      "user": "KugLJIg_0_o",
+      "userId": "KugLJIg_0_o",
+      "username": "safa",
+      "email": "safa123@gmail.com",
+      "payment": "Razorpay",
+      "total": 11295,
+      "productCount": 2,
+      "items": [
+        {
+          "userId": "KugLJIg_0_o",
+          "productId": "4",
+          "title": "sunflower",
+          "price": 2499,
+          "img": "/images/rflower4.png",
+          "category": "realflower",
+          "quantity": 4,
+          "id": "d3vq45dLKBo"
+        },
+        {
+          "userId": "KugLJIg_0_o",
+          "productId": "14",
+          "title": "Elegant Crochet Orchid",
+          "price": 1299,
+          "img": "/images/cflower6.png",
+          "category": "crochet",
+          "quantity": 1,
+          "id": "LYa3PEy3SRY"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-04T08:41:30.059Z",
+      "id": "36QMgIV_ts0"
+    },
+    {
+      "orderId": 1783158420741,
+      "user": "CeDfAgTbkNU",
+      "userId": "CeDfAgTbkNU",
+      "username": "safa",
+      "email": "safa12345@gmail.com",
+      "payment": "Razorpay",
+      "total": 5297,
+      "productCount": 3,
+      "items": [
+        {
+          "userId": "CeDfAgTbkNU",
+          "productId": "1",
+          "title": "White anemones",
+          "price": 1499,
+          "img": "/images/rflower1.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "BzXD0vxnonc"
+        },
+        {
+          "userId": "CeDfAgTbkNU",
+          "productId": "2",
+          "title": "Wildflowers",
+          "price": 1799,
+          "img": "/images/rflower2.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "pvWuYppCm4U"
+        },
+        {
+          "userId": "CeDfAgTbkNU",
+          "productId": "3",
+          "title": "Pink roses",
+          "price": 1999,
+          "img": "/images/rflower3.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "F1ZAU80lDW0"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-04T09:47:00.742Z",
+      "id": "NbTe5ox7P8I"
+    },
+    {
+      "orderId": 1783318886056,
+      "user": "KaBXDQwxJ10",
+      "userId": "KaBXDQwxJ10",
+      "username": "sabira",
+      "email": "sabira@gmail.com",
+      "payment": "Cash on Delivery",
+      "total": 2998,
+      "productCount": 1,
+      "items": [
+        {
+          "userId": "KaBXDQwxJ10",
+          "productId": "1",
+          "title": "White anemones",
+          "price": 1499,
+          "img": "/images/rflower1.png",
+          "category": "realflower",
+          "quantity": 2,
+          "id": "0db_awxsooU"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-06T06:21:26.056Z",
+      "id": "H-FQ1oPfRlw"
+    },
+    {
+      "orderId": 1783339961975,
+      "user": "KugLJIg_0_o",
+      "userId": "KugLJIg_0_o",
+      "username": "safa",
+      "email": "safa123@gmail.com",
+      "payment": "Razorpay",
+      "total": 2499,
+      "productCount": 1,
+      "items": [
+        {
+          "userId": "KugLJIg_0_o",
+          "productId": "4",
+          "title": "sunflower",
+          "price": 2499,
+          "img": "/images/rflower4.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "7wx8SAqx3cE"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "ede",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "234561"
+      },
+      "createdAt": "2026-07-06T12:12:41.975Z",
+      "id": "OYKEf4ez7gI"
+    },
+    {
+      "orderId": 1783339983544,
+      "user": "KugLJIg_0_o",
+      "userId": "KugLJIg_0_o",
+      "username": "safa",
+      "email": "safa123@gmail.com",
+      "payment": "Razorpay",
+      "total": 2499,
+      "productCount": 1,
+      "items": [
+        {
+          "userId": "KugLJIg_0_o",
+          "productId": "4",
+          "title": "sunflower",
+          "price": 2499,
+          "img": "/images/rflower4.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "7wx8SAqx3cE"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "ede",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "234561"
+      },
+      "createdAt": "2026-07-06T12:13:03.544Z",
+      "id": "teaRUNxe6h4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 const User123 = () => {
     const [search,setSearch]=useState("");
     const [user,setuser]=useState([]);
+    
 
     const getuser=async()=>{
         const res=await axios.get("http://localhost:5000/users");
@@ -13,18 +14,22 @@ const User123 = () => {
        getuser();
     },[]);
 
-const handleBlock = async (item) => {
-  const updatedUser = {
+const handleBlock=async(item)=>{
+  const updatedUser={
     ...item,
-    status: item.status === "Active" ? "Blocked" : "Active",
+    status:item.status==="Active"?"Blocked":"Active"
   };
 
-  await axios.put(
-    `http://localhost:5000/users/${item.id}`,
-    updatedUser
-  );
-  getuser(); 
-};
+ await axios.put(`http://localhost:5000/users/${item.id}`,updatedUser);
+ getuser();
+}
+
+const handlesearch=user.filter((item)=>(
+    item.username.toLowerCase().includes(search.toLowerCase()),
+    item.email.toLowerCase().includes(search.toLowerCase()),
+    item.status.toLowerCase().includes(search.toLowerCase())
+))
+ 
 
   return (
     <div>
@@ -33,7 +38,7 @@ const handleBlock = async (item) => {
       type='text'
       placeholder='Search......'
       value={search}
-      onClick={(e)=>setSearch(e.target.value)} 
+      onChange={(e)=>setSearch(e.target.value)} 
       className='bg-white-500 border border-red-500 py-3 px-3 ml-4'
       />
 
@@ -47,23 +52,19 @@ const handleBlock = async (item) => {
             <th className='border border-red-500 p-5 w-50'>Action</th>
         </tr>
     <tbody>
-        {user.map((item)=>(
+        {handlesearch.map((item)=>(
             <tr key={item.id}>
                 <td className='border border-red-500 p-8 w-110'>{item.username}</td>
                 <td className='border border-red-500 p-8 w-110'>{item.email}</td>
                 <td className='border border-red-500 p-8 w-110'>{item.role}</td>
                 <td className='border border-red-500 p-8 w-110'>{item.status}</td>
 
-                <td className="border border-red-500 p-8 w-110">
-  <button
-    onClick={() => handleBlock(item)}
-    className='bg-yellow-500'
-  >
-    {item.status === "Active"
-      ? "Block"
-      : "Unblock"}
-  </button>
-</td>
+                <td className='border border-red-500 p-8 w-110'>
+                 <button onClick={()=>handleBlock(item)}
+                  className='border border-yellow-500'>
+                  {item.status==="Active"?"Block":"unblock"}
+                 </button>
+                </td>
           </tr>
         ))}
         

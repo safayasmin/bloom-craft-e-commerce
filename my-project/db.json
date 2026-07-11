@@ -219,7 +219,7 @@
       "createdAt": "2026-07-03T04:38:46.579Z",
       "id": "h9ItbNO4jmI",
       "role": "user",
-      "status": "Active"
+      "status": "Blocked"
     },
     {
       "username": "bishir",
@@ -241,7 +241,7 @@
       "createdAt": "2026-07-04T09:45:49.695Z",
       "id": "CeDfAgTbkNU",
       "role": "user",
-      "status": "Blocked"
+      "status": "Active"
     },
     {
       "username": "sabira",
@@ -252,7 +252,7 @@
       "createdAt": "2026-07-06T06:20:24.862Z",
       "id": "KaBXDQwxJ10",
       "role": "user",
-      "status": "active"
+      "status": "Blocked"
     },
     {
       "username": "sabira",
@@ -262,7 +262,7 @@
       "avatar": "https://i.pravatar.cc/150?u=sabira1@gmail.com",
       "createdAt": "2026-07-08T09:07:28.257Z",
       "role": "user",
-      "status": "active",
+      "status": "Blocked",
       "id": "gVoSw6w9OH4"
     },
     {
@@ -273,7 +273,7 @@
       "avatar": "https://i.pravatar.cc/150?u=safwan@gmail.com",
       "createdAt": "2026-07-08T12:53:39.658Z",
       "role": "user",
-      "status": "active",
+      "status": "Active",
       "id": "1iqWGOGt8eY"
     }
   ],

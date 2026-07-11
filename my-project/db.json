@@ -208,7 +208,7 @@
       "createdAt": "2026-07-02T04:35:22.786Z",
       "id": "KugLJIg_0_o",
       "role": "user",
-      "status": "Active"
+      "status": "Blocked"
     },
     {
       "username": "safa",
@@ -219,7 +219,7 @@
       "createdAt": "2026-07-03T04:38:46.579Z",
       "id": "h9ItbNO4jmI",
       "role": "user",
-      "status": "Blocked"
+      "status": "Active"
     },
     {
       "username": "bishir",
@@ -252,7 +252,7 @@
       "createdAt": "2026-07-06T06:20:24.862Z",
       "id": "KaBXDQwxJ10",
       "role": "user",
-      "status": "Blocked"
+      "status": "Active"
     },
     {
       "username": "sabira",
@@ -275,6 +275,28 @@
       "role": "user",
       "status": "Active",
       "id": "1iqWGOGt8eY"
+    },
+    {
+      "username": "fayas",
+      "fullName": "m",
+      "email": "fayas123@gmail.com",
+      "password": "fayas123",
+      "avatar": "https://i.pravatar.cc/150?u=fayas123@gmail.com",
+      "createdAt": "2026-07-11T06:03:09.827Z",
+      "role": "user",
+      "status": "active",
+      "id": "6JxXxa1ykgk"
+    },
+    {
+      "username": "Admin",
+      "fullName": "Bloomcraft admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "avatar": "https://i.pravatar.cc/150?u=admin@gmail.com",
+      "createdAt": "2026-07-11T06:12:05.302Z",
+      "role": "admin",
+      "status": "active",
+      "id": "2X6F61KZRDc"
     }
   ],
   "cart": [
@@ -1020,6 +1042,16 @@
       "category": "crochet",
       "quantity": 1,
       "id": "ZXXmFcYBXJM"
+    },
+    {
+      "userId": "KugLJIg_0_o",
+      "productId": "2",
+      "title": "Wildflowers",
+      "price": 1799,
+      "img": "/images/rflower2.png",
+      "category": "realflower",
+      "quantity": 1,
+      "id": "O23StnLE-mU"
     }
   ],
   "wishlist": [
@@ -1139,6 +1171,24 @@
       "img": "/images/cflower2.png",
       "category": "crochet",
       "id": "h6WIsi-cO9s"
+    },
+    {
+      "userId": "6JxXxa1ykgk",
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "category": "realflower",
+      "id": "vihYlwFD_lw"
+    },
+    {
+      "userId": "KugLJIg_0_o",
+      "productId": "2",
+      "title": "Wildflowers",
+      "price": 1799,
+      "img": "/images/rflower2.png",
+      "category": "realflower",
+      "id": "X6qmfWM-nbk"
     }
   ],
   "orders": [
@@ -1693,6 +1743,49 @@
       "status": "Order Placed",
       "createdAt": "2026-07-08T12:55:38.980Z",
       "id": "HsN0VJwObgs"
+    },
+    {
+      "orderId": 1783760351837,
+      "user": "6JxXxa1ykgk",
+      "userId": "6JxXxa1ykgk",
+      "username": "fayas",
+      "email": "fayas123@gmail.com",
+      "payment": "Cash on Delivery",
+      "total": 3298,
+      "productCount": 2,
+      "items": [
+        {
+          "userId": "6JxXxa1ykgk",
+          "productId": "1",
+          "title": "White anemones",
+          "price": 1499,
+          "img": "/images/rflower1.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "XtF95iQXx9w"
+        },
+        {
+          "userId": "6JxXxa1ykgk",
+          "productId": "2",
+          "title": "Wildflowers",
+          "price": 1799,
+          "img": "/images/rflower2.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "uVAf2LaaSVQ"
+        }
+      ],
+      "address": {
+        "fullName": "shifaaa",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "status": "Order Placed",
+      "createdAt": "2026-07-11T08:59:11.837Z",
+      "id": "uwhMkRSC2vo"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

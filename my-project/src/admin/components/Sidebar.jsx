@@ -6,7 +6,7 @@ const Sidebar = () => {
 
   const handleLogout = () => {
     sessionStorage.removeItem("admin");
-    navigate("/login");
+    navigate("/home");
   };
 
   return (

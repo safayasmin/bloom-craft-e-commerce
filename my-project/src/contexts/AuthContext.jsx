@@ -43,16 +43,39 @@ export default function AuthProvider({ children }) {
 }, []);
 
   // LOGIN
-  const login = async (email, password) => {
-    const found = await loginUser(email, password);
+  // const login = async (email, password) => {
+  //   const found = await loginUser(email, password);
 
-    if (!found) throw new Error("Invalid Credentials");
+  //   if (!found) throw new Error("Invalid Credentials");
 
-    localStorage.setItem("userId", found.id);
-    localStorage.setItem("user", JSON.stringify(found));
+  //   localStorage.setItem("userId", found.id);
+  //   localStorage.setItem("user", JSON.stringify(found));
 
-    setUser(found);
-  };
+  //   setUser(found);
+  // };
+
+const login = async (email, password) => {
+  const found = await loginUser(email, password);
+
+  if (!found) {
+    throw new Error("Invalid Credentials");
+  }
+
+  // Blocked user check
+  if (found.status === "Blocked") {
+    throw new Error("Your account has been blocked by the admin.");
+  }
+
+  localStorage.setItem("userId", found.id);
+  localStorage.setItem("user", JSON.stringify(found));
+
+  setUser(found);
+
+  return found;
+};
+
+
+
 
   // LOGOUT
   const logout = () => {

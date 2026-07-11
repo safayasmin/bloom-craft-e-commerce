@@ -18,35 +18,58 @@ const Login = () => {
   });
 
 // After login redirect to wishlist/cart
- useEffect(() => {
-  if (!user) return;
-  const from = location.state?.from || "/home";
+//  useEffect(() => {
+//   if (!user) return;
+//   const from = location.state?.from || "/home";
 
-  navigate(from, { replace: true });
-}, [user]);
+//   navigate(from, { replace: true });
+// }, [user]);
 
 
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    try {
-      await login(form.email, form.password);
-      toast.success("Login Success");
+  //   try {
+  //     await login(form.email, form.password);
+  //     toast.success("Login Success");
 
-      // Normal login → Home
-      if (!location.state?.action) {
-        navigate("/home", {
-          replace: true,
-        });
-      }
+  //     // Normal login → Home
+  //     if (!location.state?.action) {
+  //       navigate("/home", {
+  //         replace: true,
+  //       });
+  //     }
 
-    } catch (err) {
-      toast.error(
-        err.message || "Login Failed"
-      );
+  //   } catch (err) {
+  //     toast.error(
+  //       err.message || "Login Failed"
+  //     );
+  //   }
+  // };
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const loggedUser = await login(form.email, form.password);
+
+    console.log("Logged User:", loggedUser);
+console.log("Role:", loggedUser?.role);
+
+    toast.success("Login Success");
+
+    if (loggedUser.role === "admin") {
+      navigate("/admin/dashboard", { replace: true });
+    } else {
+      const from = location.state?.from || "/home";
+      navigate(from, { replace: true });
     }
-  };
+
+  } catch (err) {
+    toast.error(err.message || "Login Failed");
+  }
+};
 
   return (
     <div className="min-h-screen relative flex items-center justify-center overflow-hidden px-4">

@@ -36,6 +36,7 @@ import EditProduct from "./admin/products/EditProduct";
 import Users from "./admin/users/Users";
 import AdminOrders from "./admin/orders/AdminOrders";
 import OrderDetails from "./admin/orders/OrderDetails";
+import AdminProtectedRoute from "./routes/AdminProtectedRoute";
 
 
 
@@ -124,7 +125,12 @@ const cart = useSelector(
 
           <Route path="/orders" element={<Orders />} />
 
-<Route path="/admin" element={<AdminLayout />}>
+<Route
+  path="/admin"
+  element={
+    <AdminProtectedRoute>
+      <AdminLayout />
+      </AdminProtectedRoute>}>
 
    <Route path="dashboard" element={<Dashboard />} />
 

@@ -80,15 +80,39 @@ const Orders = () => {
                         className="w-16 h-16 rounded-lg object-cover border border-[#d4af37]/30"
                       />
 
-                      <div>
-                        <h2 className="text-white font-semibold">
-                          {item.title}
-                        </h2>
+                      <div className="flex justify-between items-start w-full">
 
-                        <p className="text-gray-400">
-                          ₹{item.price}
-                        </p>
-                      </div>
+  <div>
+    <h2 className="text-white font-semibold">
+      {item.title}
+    </h2>
+
+    <p className="text-gray-400">
+      ₹{item.price}
+    </p>
+  </div>
+
+  <span
+    className={`px-3 py-1 rounded-full text-sm font-semibold
+      ${
+        order.status === "Order Placed"
+          ? "bg-yellow-500/20 text-yellow-400 border border-yellow-500/40"
+          : order.status === "Processing"
+          ? "bg-blue-500/20 text-blue-400 border border-blue-500/40"
+          : order.status === "Shipped"
+          ? "bg-purple-500/20 text-purple-400 border border-purple-500/40"
+          : order.status === "Delivered"
+          ? "bg-green-500/20 text-green-400 border border-green-500/40"
+          : "bg-red-500/20 text-red-400 border border-red-500/40"
+      }`}
+  >
+    {order.status}
+  </span>
+
+</div>
+
+
+
                     </div>
                   ))} 
                 </div>

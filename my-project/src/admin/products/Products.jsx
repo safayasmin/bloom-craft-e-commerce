@@ -19,6 +19,8 @@ const productsPerPage = 3;
   const dispatch = useDispatch();
 
   const products = useSelector((state) => state.products.products);
+  //Redux store-il ninn products array edukkunnu.
+
 
   // Fetch Products
   const getProducts = async () => {
@@ -38,6 +40,7 @@ const productsPerPage = 3;
   );
 
   if (!confirmDelete) return;
+  //Cancel cheythal function avide stop.
 
   try {
     await axios.delete(`http://localhost:5000/Products/${id}`);
@@ -69,7 +72,6 @@ const filteredProducts = products.filter((item) => {
       : item.category === category;
 
   return matchSearch && matchCategory;
-
 });
 
 
@@ -277,7 +279,6 @@ shadow-xl">
 
 
 <div className="flex justify-center mt-5 gap-3">
-
   {[...Array(totalPages)].map((_, index) => (
 
     <button
@@ -297,12 +298,7 @@ ${
   ))}
 
 </div>
-
-
-
-
-      </div>
-
+    </div>
     </div>
   );
 };

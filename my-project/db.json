@@ -5,7 +5,9 @@
       "title": "White anemones",
       "price": 1499,
       "img": "/images/rflower1.png",
-      "category": "realflower"
+      "category": "realflower",
+      "stock": "233",
+      "description": "good"
     },
     {
       "id": "2",
@@ -169,13 +171,31 @@
       "category": "wedding"
     },
     {
-      "title": "rose123",
+      "title": "rose1",
       "category": "crochet",
-      "price": "2000",
-      "stock": "6",
+      "price": "900",
+      "stock": "12",
       "img": "images",
-      "description": "super\n",
-      "id": "cIDkWWF-Axc"
+      "description": "good product ",
+      "id": "08628sFxUAo"
+    },
+    {
+      "title": "rose2",
+      "category": "crochet",
+      "price": "900",
+      "stock": "12",
+      "img": "images",
+      "description": "good",
+      "id": "4AMx1Lsa9LI"
+    },
+    {
+      "title": "rose3",
+      "category": "crochet",
+      "price": "900",
+      "stock": "12",
+      "img": "images",
+      "description": "good",
+      "id": "Bjpkv8Z69jo"
     }
   ],
   "users": [
@@ -186,7 +206,9 @@
       "password": "safa123",
       "avatar": "https://i.pravatar.cc/150?u=safa123@gmail.com",
       "createdAt": "2026-07-02T04:35:22.786Z",
-      "id": "KugLJIg_0_o"
+      "id": "KugLJIg_0_o",
+      "role": "user",
+      "status": "Active"
     },
     {
       "username": "safa",
@@ -195,7 +217,9 @@
       "password": "safa1234",
       "avatar": "https://i.pravatar.cc/150?u=safa1234@gmail.com",
       "createdAt": "2026-07-03T04:38:46.579Z",
-      "id": "h9ItbNO4jmI"
+      "id": "h9ItbNO4jmI",
+      "role": "user",
+      "status": "Active"
     },
     {
       "username": "bishir",
@@ -204,7 +228,9 @@
       "password": "123456",
       "avatar": "https://i.pravatar.cc/150?u=bishir@gmail.com",
       "createdAt": "2026-07-03T06:32:14.999Z",
-      "id": "8YEQZnk7v0M"
+      "id": "8YEQZnk7v0M",
+      "role": "user",
+      "status": "Active"
     },
     {
       "username": "safa",
@@ -213,7 +239,9 @@
       "password": "safa12345",
       "avatar": "https://i.pravatar.cc/150?u=safa12345@gmail.com",
       "createdAt": "2026-07-04T09:45:49.695Z",
-      "id": "CeDfAgTbkNU"
+      "id": "CeDfAgTbkNU",
+      "role": "user",
+      "status": "Blocked"
     },
     {
       "username": "sabira",
@@ -222,7 +250,31 @@
       "password": "sabira",
       "avatar": "https://i.pravatar.cc/150?u=sabira@gmail.com",
       "createdAt": "2026-07-06T06:20:24.862Z",
-      "id": "KaBXDQwxJ10"
+      "id": "KaBXDQwxJ10",
+      "role": "user",
+      "status": "active"
+    },
+    {
+      "username": "sabira",
+      "fullName": "kp",
+      "email": "sabira1@gmail.com",
+      "password": "sabira1",
+      "avatar": "https://i.pravatar.cc/150?u=sabira1@gmail.com",
+      "createdAt": "2026-07-08T09:07:28.257Z",
+      "role": "user",
+      "status": "active",
+      "id": "gVoSw6w9OH4"
+    },
+    {
+      "username": "safwan",
+      "fullName": "k",
+      "email": "safwan@gmail.com",
+      "password": "safwan",
+      "avatar": "https://i.pravatar.cc/150?u=safwan@gmail.com",
+      "createdAt": "2026-07-08T12:53:39.658Z",
+      "role": "user",
+      "status": "active",
+      "id": "1iqWGOGt8eY"
     }
   ],
   "cart": [
@@ -948,6 +1000,26 @@
       "price": 1599,
       "img": "/images/rflower5.png",
       "id": "Smng9gqsbeE"
+    },
+    {
+      "userId": "CeDfAgTbkNU",
+      "productId": "10",
+      "title": "Handmade roses Set",
+      "price": 899,
+      "img": "/images/cflower2.png",
+      "category": "crochet",
+      "quantity": 1,
+      "id": "WDL9BSIxKco"
+    },
+    {
+      "userId": "CeDfAgTbkNU",
+      "productId": "11",
+      "title": "soft flower crochet",
+      "price": 1099,
+      "img": "/images/cflower3.png",
+      "category": "crochet",
+      "quantity": 1,
+      "id": "ZXXmFcYBXJM"
     }
   ],
   "wishlist": [
@@ -1022,6 +1094,51 @@
       "img": "/images/rflower3.png",
       "category": "realflower",
       "id": "0FEsp68-vVw"
+    },
+    {
+      "userId": "KugLJIg_0_o",
+      "productId": "1",
+      "title": "White anemones1111",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "category": "realflower",
+      "id": "QZyU3QAjDfs"
+    },
+    {
+      "userId": "1iqWGOGt8eY",
+      "productId": "1",
+      "title": "White anemones",
+      "price": 1499,
+      "img": "/images/rflower1.png",
+      "category": "realflower",
+      "id": "xrgQ3MRkA14"
+    },
+    {
+      "userId": "1iqWGOGt8eY",
+      "productId": "2",
+      "title": "Wildflowers",
+      "price": 1799,
+      "img": "/images/rflower2.png",
+      "category": "realflower",
+      "id": "ugkiu3gtuO8"
+    },
+    {
+      "userId": "CeDfAgTbkNU",
+      "productId": "11",
+      "title": "soft flower crochet",
+      "price": 1099,
+      "img": "/images/cflower3.png",
+      "category": "crochet",
+      "id": "w2bvxTkiQjI"
+    },
+    {
+      "userId": "CeDfAgTbkNU",
+      "productId": "10",
+      "title": "Handmade roses Set",
+      "price": 899,
+      "img": "/images/cflower2.png",
+      "category": "crochet",
+      "id": "h6WIsi-cO9s"
     }
   ],
   "orders": [
@@ -1055,7 +1172,8 @@
         "pincode": "679357"
       },
       "createdAt": "2026-07-02T04:36:09.730Z",
-      "id": "2sLFNv110Z4"
+      "id": "2sLFNv110Z4",
+      "status": "Shipped"
     },
     {
       "orderId": 1783058397892,
@@ -1468,6 +1586,113 @@
       },
       "createdAt": "2026-07-06T12:13:03.544Z",
       "id": "teaRUNxe6h4"
+    },
+    {
+      "orderId": 1783404971997,
+      "user": "KugLJIg_0_o",
+      "userId": "KugLJIg_0_o",
+      "username": "safa",
+      "email": "safa123@gmail.com",
+      "payment": "Razorpay",
+      "total": 9996,
+      "productCount": 1,
+      "items": [
+        {
+          "userId": "KugLJIg_0_o",
+          "productId": "4",
+          "title": "sunflower",
+          "price": 2499,
+          "img": "/images/rflower4.png",
+          "category": "realflower",
+          "quantity": 4,
+          "id": "wXPKrAE31W8"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-07T06:16:11.997Z",
+      "id": "hwAhRE4h1xw"
+    },
+    {
+      "orderId": 1783515264209,
+      "user": "1iqWGOGt8eY",
+      "userId": "1iqWGOGt8eY",
+      "username": "safwan",
+      "email": "safwan@gmail.com",
+      "payment": "Razorpay",
+      "total": 3298,
+      "productCount": 2,
+      "items": [
+        {
+          "userId": "1iqWGOGt8eY",
+          "productId": "1",
+          "title": "White anemones",
+          "price": 1499,
+          "img": "/images/rflower1.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "Iwfau2yx5OQ"
+        },
+        {
+          "userId": "1iqWGOGt8eY",
+          "productId": "2",
+          "title": "Wildflowers",
+          "price": 1799,
+          "img": "/images/rflower2.png",
+          "category": "realflower",
+          "quantity": 1,
+          "id": "uYJoIKygXz0"
+        }
+      ],
+      "address": {
+        "fullName": "Safa Yasmin",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "createdAt": "2026-07-08T12:54:24.209Z",
+      "id": "NN3WZTR2YHU"
+    },
+    {
+      "orderId": 1783515338980,
+      "user": "1iqWGOGt8eY",
+      "userId": "1iqWGOGt8eY",
+      "username": "safwan",
+      "email": "safwan@gmail.com",
+      "payment": "Cash on Delivery",
+      "total": 3998,
+      "productCount": 1,
+      "items": [
+        {
+          "userId": "1iqWGOGt8eY",
+          "productId": "3",
+          "title": "Pink roses",
+          "price": 1999,
+          "img": "/images/rflower3.png",
+          "category": "realflower",
+          "quantity": 2,
+          "id": "NmdVL7T5Gl8"
+        }
+      ],
+      "address": {
+        "fullName": "safwan",
+        "phone": "7736726617",
+        "address": "perinthalmanna ,koramkode\nkarinkallathani ,thootha road malappuram",
+        "city": "Malappuram",
+        "state": "Kerala",
+        "pincode": "679357"
+      },
+      "status": "Order Placed",
+      "createdAt": "2026-07-08T12:55:38.980Z",
+      "id": "HsN0VJwObgs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

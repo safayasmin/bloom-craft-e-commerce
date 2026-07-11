@@ -131,7 +131,7 @@ const handleSubmit = async () => {
   },
 
   // 👇 Add this
-  // status: "Order Placed",
+  status: "Order Placed",
 
   createdAt: new Date().toISOString(),
 };

@@ -19,6 +19,7 @@ import ExploreHome from "./explore/Explorehome";
 import Razorpay from "./pages/Razorpay";
 import OrderSuccess from "./pages/OrderSuccess";
 import Orders from "./pages/Orders";
+
 import { useDispatch, useSelector } from "react-redux";
 import { setCart } from "./redux/cartSlice";
 import { useAuth } from "./contexts/AuthContext";
@@ -33,6 +34,14 @@ import Products from "./admin/products/Products";
 import AddProduct from "./admin/products/AddProduct";
 import EditProduct from "./admin/products/EditProduct";
 import Users from "./admin/users/Users";
+import AdminOrders from "./admin/orders/AdminOrders";
+import OrderDetails from "./admin/orders/OrderDetails";
+
+
+
+import Hero from "./forREVIEW/Hero";
+import EditforRview from "./forREVIEW/EditforRview";
+import User123 from "./forREVIEW/User123";
 
 
 
@@ -115,16 +124,30 @@ const cart = useSelector(
 
           <Route path="/orders" element={<Orders />} />
 
+<Route path="/admin" element={<AdminLayout />}>
 
-         <Route path="/admin" element={<AdminLayout />}>
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="products" element={<Products />} />
-            <Route path="add-product" element={<AddProduct />} />
-            <Route path="edit-product/:id" element={<EditProduct />} />
-             <Route path="users" element={<Users />} />
+   <Route path="dashboard" element={<Dashboard />} />
 
+   <Route path="products" element={<Products />} />
 
-          </Route>
+   <Route path="add-product" element={<AddProduct />} />
+
+   <Route path="edit-product/:id" element={<EditProduct />} />
+
+   <Route path="users" element={<Users />} />
+
+   <Route path="orders" element={<AdminOrders />} />
+
+   <Route
+      path="orders/:id"
+      element={<OrderDetails />}
+   />
+
+</Route>
+
+          <Route path="hero" element={<Hero />}/>
+          <Route path="/editforrview/:id" element={<EditforRview />}/>
+          <Route path="/user123" element={<User123 />}/>
          
         </Routes>
       </BrowserRouter>

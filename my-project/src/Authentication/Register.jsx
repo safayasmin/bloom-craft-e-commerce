@@ -36,14 +36,18 @@ const Register = () => {
       return toast.error("Password and Confirm Password do not match");
 
     try {
-      const res = await axios.post("http://localhost:5000/users", {
-        username: form.username,
-        fullName: form.fullName,
-        email: form.email,
-        password: form.password,
-        avatar: `https://i.pravatar.cc/150?u=${form.email}`,
-        createdAt: new Date().toISOString(),
-      });
+     const res = await axios.post("http://localhost:5000/users", {
+  username: form.username,
+  fullName: form.fullName,
+  email: form.email,
+  password: form.password,
+  avatar: `https://i.pravatar.cc/150?u=${form.email}`,
+  createdAt: new Date().toISOString(),
+
+  role: "user",
+  status: "active",
+});
+
 
       // Save user
       setUser({

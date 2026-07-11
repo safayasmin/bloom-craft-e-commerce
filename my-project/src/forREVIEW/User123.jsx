@@ -4,7 +4,9 @@ import React, { useEffect, useState } from 'react'
 const User123 = () => {
     const [search,setSearch]=useState("");
     const [user,setuser]=useState([]);
+    const [currentpage,setcurrentpage]=useState(1);
     
+const userperpage=3;
 
     const getuser=async()=>{
         const res=await axios.get("http://localhost:5000/users");
@@ -25,10 +27,18 @@ const handleBlock=async(item)=>{
 }
 
 const handlesearch=user.filter((item)=>(
-    item.username.toLowerCase().includes(search.toLowerCase()),
-    item.email.toLowerCase().includes(search.toLowerCase()),
+    item.username.toLowerCase().includes(search.toLowerCase()) ||
+    item.email.toLowerCase().includes(search.toLowerCase()) ||
     item.status.toLowerCase().includes(search.toLowerCase())
 ))
+
+const lastindex=currentpage*userperpage;
+const firstindex=lastindex-userperpage;
+const currentuser=handlesearch.slice(
+  firstindex,lastindex
+);
+const totalpage=Math.ceil(handlesearch.length/userperpage);
+
  
 
   return (
@@ -43,6 +53,7 @@ const handlesearch=user.filter((item)=>(
       />
 
       <table className='border border-red-500 border-collapse m-6'>
+        <thead>
         <tr>
             <th className='border border-red-500 p-5 w-70'>Name</th>
 
@@ -51,8 +62,9 @@ const handlesearch=user.filter((item)=>(
             <th className='border border-red-500 p-5 w-50'>Status</th>
             <th className='border border-red-500 p-5 w-50'>Action</th>
         </tr>
+      </thead>
     <tbody>
-        {handlesearch.map((item)=>(
+        {currentuser.map((item)=>(
             <tr key={item.id}>
                 <td className='border border-red-500 p-8 w-110'>{item.username}</td>
                 <td className='border border-red-500 p-8 w-110'>{item.email}</td>
@@ -64,12 +76,21 @@ const handlesearch=user.filter((item)=>(
                   className='border border-yellow-500'>
                   {item.status==="Active"?"Block":"unblock"}
                  </button>
-                </td>
+              </td>
           </tr>
         ))}
         
     </tbody>
       </table>
+      {[...Array(totalpage)].map((_,index) =>(
+        <button
+        key={index}
+        onClick={()=>setcurrentpage(index+1)}
+        className='bg-yellow-500 px-4 py-3 ml-3'
+        >
+        {index+1}
+        </button>
+      ))}
 
     </div>
   )

@@ -19,7 +19,6 @@ const AdminOrders = () => {
 
   const ordersPerPage = 3;
 
-  // ---------------- Fetch Orders ----------------
 
   const getOrders = async () => {
     try {
@@ -37,7 +36,7 @@ const AdminOrders = () => {
     getOrders();
   }, []);
 
-  // ---------------- Update Status ----------------
+  
 
   const handleStatus = async (order, status) => {
     const updatedOrder = {
@@ -57,7 +56,7 @@ const AdminOrders = () => {
     }
   };
 
-  // ---------------- Search ----------------
+
 
   const filteredOrders = orders.filter((item) => {
     return (
@@ -70,7 +69,7 @@ const AdminOrders = () => {
     );
   });
 
-  // ---------------- Pagination ----------------
+
 
   const lastIndex =
     currentPage * ordersPerPage;
@@ -89,7 +88,6 @@ const AdminOrders = () => {
       ordersPerPage
   );
 
-  // ---------------- Statistics ----------------
 
   const totalOrders = orders.length;
 

@@ -8,12 +8,12 @@ const UserDetails = ({
   return (
     <tr className="border-b border-[#d4af37]/10 hover:bg-[#1b1611] transition">
 
-      {/* Name */}
+      
       <td className="p-4 text-white font-medium">
         {user.name}
       </td>
 
-      {/* Email */}
+    
       <td className="p-4 text-gray-300">
         {user.email}
       </td>

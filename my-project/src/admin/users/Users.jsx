@@ -1,7 +1,4 @@
 
-// Perfect 👍. Nammal oru file vechu complete cheyyam. First Users.jsx. Ith search, statistics, block/unblock, pagination, premium theme ellam include cheyyunnu.
-// Note: Ith work cheyyan db.json-il users array venam. Oro user-kkum id, name, email, role, status fields undayirikkanam.
-
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -52,8 +49,7 @@ const Users = () => {
     }
   }; 
 
-  // ---------------- Search ----------------
-
+  
  const filteredUsers = users.filter((item) => {
   return (
     item.fullName.toLowerCase().includes(search.toLowerCase()) ||
@@ -62,7 +58,7 @@ const Users = () => {
   );
 });
 
-  // ---------------- Pagination ----------------
+  
 
   const lastIndex = currentPage * usersPerPage;
 
@@ -74,7 +70,7 @@ const Users = () => {
     filteredUsers.length / usersPerPage
   );
 
-  // ---------------- Statistics ----------------
+ 
 
   const totalUsers = users.length;
 

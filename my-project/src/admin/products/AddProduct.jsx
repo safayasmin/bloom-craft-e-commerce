@@ -13,9 +13,9 @@ const AddProduct = () => {
     title: "",
     category: "",
     price: "",
-    stock: "",
+    // stock: "",
     img: "",
-    description: "",
+    
   });
 
   const handleChange = (e) => {
@@ -33,9 +33,9 @@ const handleSubmit = async (e) => {
     !form.title ||
     !form.category ||
     !form.price ||
-    !form.stock ||
-    !form.img ||
-    !form.description
+    // !form.stock ||
+    !form.img 
+    
   ) {
     toast.error("Please fill all fields");
     return;
@@ -130,7 +130,7 @@ const handleSubmit = async (e) => {
 
           {/* Stock */}
 
-          <div>
+          {/* <div>
 
             <label className="block mb-2 font-semibold text-[#d4af37]">
               Stock
@@ -145,7 +145,7 @@ const handleSubmit = async (e) => {
               placeholder="Available Stock"
             />
 
-          </div>
+          </div> */}
 
           {/* Image */}
 
@@ -166,24 +166,7 @@ const handleSubmit = async (e) => {
 
           </div>
 
-          {/* Description */}
-
-          <div>
-
-            <label className="block mb-2 font-semibold text-[#d4af37]">
-              Description
-            </label>
-
-            <textarea
-              rows="5"
-              name="description"
-              value={form.description}
-              onChange={handleChange}
-              className="w-full bg-[#1b1611] border border-[#d4af37]/30 text-white placeholder-gray-500 rounded-xl p-3 focus:outline-none focus:border-[#d4af37] transition"
-              placeholder="Product Description"
-            />
-
-          </div>
+ 
 
           <div className="flex justify-end gap-4">
 

@@ -43,6 +43,9 @@ import AdminProtectedRoute from "./routes/AdminProtectedRoute";
 import Hero from "./forREVIEW/Hero";
 import EditforRview from "./forREVIEW/EditforRview";
 import User123 from "./forREVIEW/User123";
+import Totalproduct from "./forREVIEW/Totalproduct";
+import Order123 from "./forREVIEW/Order123";
+import Safa from "./admin/Safa";
 
 
 
@@ -148,12 +151,15 @@ const cart = useSelector(
       path="orders/:id"
       element={<OrderDetails />}
    />
+   <Route path="safa" element={<Safa />}/>
 
 </Route>
 
           <Route path="hero" element={<Hero />}/>
           <Route path="/editforrview/:id" element={<EditforRview />}/>
           <Route path="/user123" element={<User123 />}/>
+          <Route path="/totalproduct" element={<Totalproduct />}/>
+          <Route path="order123" element={<Order123 />}/>
          
         </Routes>
       </BrowserRouter>

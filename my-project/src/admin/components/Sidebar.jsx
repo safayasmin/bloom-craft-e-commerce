@@ -1,11 +1,21 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 
 const Sidebar = () => {
+  const { logout } = useAuth();
   const navigate = useNavigate();
 
+  // const handleLogout = () => {
+  //   sessionStorage.removeItem("admin");
+  //   navigate("/home");
+  // };
+
+
   const handleLogout = () => {
-    sessionStorage.removeItem("admin");
+    logout();
+    localStorage.removeItem("Value");
+    sessionStorage.removeItem("Value");
     navigate("/home");
   };
 
@@ -13,14 +23,14 @@ const Sidebar = () => {
     <div className="bg-black text-white w-64 h-screen fixed left-0 top-0 shadow-lg">
 
       <div className="p-6 border-b border-gray-700">
-  <h1 className="text-2xl font-bold text-yellow-400">
-    BloomCraft
-  </h1>
+        <h1 className="text-2xl font-bold text-yellow-400">
+          BloomCraft
+        </h1>
 
-  <p className="text-sm text-gray-400 mt-1">
-    Real Flowers • Crochet • Wedding
-  </p>
-</div>
+        <p className="text-sm text-gray-400 mt-1">
+          Real Flowers • Crochet • Wedding
+        </p>
+      </div>
 
       <div className="flex flex-col mt-6">
 

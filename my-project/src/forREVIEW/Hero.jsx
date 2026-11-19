@@ -7,6 +7,7 @@ const Hero = () => {
     const [fltproduct,setfltproduct]=useState("all");
     const [currentPage,setcurrentPge]=useState(1);
     const navigate=useNavigate();
+    const [search,setsearch]=useState("");
 
     const productperpage=3;
     
@@ -19,20 +20,30 @@ const Hero = () => {
         setproduct(res.data);
     }
 
-    const filterevery=
-    fltproduct==="all"?
-    product:
-    product.filter((item)=>item.category===fltproduct);
+    const handledatas=product.filter((n)=>{
+        const dropdon=
+            fltproduct==="all" ||
+            n.category===fltproduct;
+            
+        
+        const searchbar=
+        n.title.toLowerCase().includes(search.toLowerCase()) ||
+        n.category.toLowerCase().includes(search.toLowerCase()) 
+      
+        return dropdon && searchbar;
+         
+    });
+    
 
 
     const lastIndex=currentPage*productperpage;
     const firstIndex=lastIndex-productperpage;
-    const currentProducts=filterevery.slice(
+    const currentProducts=handledatas.slice(
         firstIndex,
         lastIndex
     )
 
-    const totalPages=Math.ceil(filterevery.length/productperpage);
+    const totalPages=Math.ceil(handledatas.length/productperpage);
 
     const handledelete=async(id)=>{
         const res=await axios.delete(`http://localhost:5000/Products/${id}`);
@@ -60,6 +71,15 @@ const Hero = () => {
         <option value="crochet">crochet</option>
         <option value="wedding">wedding</option>
         </select>
+
+        <input
+        type='text'
+        placeholder='search....'
+        value={search}
+        onChange={(e)=>{
+            setsearch(e.target.value);
+            currentPage(1)
+        }} />
 
 
         <table className="mt-6 border-collapse">

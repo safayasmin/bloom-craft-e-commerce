@@ -9,70 +9,88 @@ export default function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   // LOAD USER
- useEffect(() => {
-  const loadUser = async () => {
-    const id = localStorage.getItem("userId");
+  useEffect(() => {
+    const loadUser = async () => {
+      const id = localStorage.getItem("userId");
 
-    if (!id) {
-      setLoading(false);
-      return;
-    }
+      if (!id) {
+        setLoading(false);
+        return;
+      }
 
-    try {
-      const data = await getUserById(id);
+      try {
+        const data = await getUserById(id);
 
-      if (data) {
-        setUser(data);
-      } else {
+        if (data) {
+          setUser(data);
+          localStorage.setItem("user", JSON.stringify(data));
+        } else {
+          localStorage.removeItem("userId");
+          localStorage.removeItem("user");
+          setUser(null);
+        }
+      }
+      catch (error) {
+        console.log(error);
+
         localStorage.removeItem("userId");
         localStorage.removeItem("user");
         setUser(null);
+      } finally {
+        setLoading(false);
       }
-    } catch (error) {
-      console.log(error);
+    };
 
-      localStorage.removeItem("userId");
-      localStorage.removeItem("user");
-      setUser(null);
-    } finally {
-      setLoading(false);
+    loadUser();
+  }, []);
+
+
+
+
+
+
+  // Auto logout if admin blocks the user
+  useEffect(() => {
+    if (!user) return;
+
+    const interval = setInterval(async () => {
+      try {
+        const latestUser = await getUserById(user.id);
+
+        if (latestUser.status === "Blocked") {
+          localStorage.removeItem("userId");
+          localStorage.removeItem("user");
+          setUser(null);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }, 2000);
+
+
+    return () => clearInterval(interval);
+  }, [user]);
+
+
+  const login = async (email, password) => {
+    const found = await loginUser(email, password);
+
+    if (!found) {
+      throw new Error("Invalid Credentials");
     }
+
+    // Blocked user check
+    if (found.status === "Blocked") {
+      throw new Error("Your account has been blocked by the admin.");
+    }
+
+    localStorage.setItem("userId", found.id);
+    localStorage.setItem("user", JSON.stringify(found));
+
+    setUser(found);
+
+    return found;
   };
-
-  loadUser();
-}, []);
-
-  // LOGIN
-  // const login = async (email, password) => {
-  //   const found = await loginUser(email, password);
-
-  //   if (!found) throw new Error("Invalid Credentials");
-
-  //   localStorage.setItem("userId", found.id);
-  //   localStorage.setItem("user", JSON.stringify(found));
-
-  //   setUser(found);
-  // };
-
-const login = async (email, password) => {
-  const found = await loginUser(email, password);
-
-  if (!found) {
-    throw new Error("Invalid Credentials");
-  }
-
-  // Blocked user check
-  if (found.status === "Blocked") {
-    throw new Error("Your account has been blocked by the admin.");
-  }
-
-  localStorage.setItem("userId", found.id);
-  localStorage.setItem("user", JSON.stringify(found));
-
-  setUser(found);
-
-  return found;
-};
 
 
 

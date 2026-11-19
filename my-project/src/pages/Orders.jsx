@@ -6,22 +6,61 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
   const { user } = useAuth();
 
-  useEffect(() => {
-    if (!user) return;
+  // useEffect(() => {
+  //   if (!user) return;
 
-    const fetchOrders = async () => {
-      try {
-        const res = await axios.get(
-          `http://localhost:5000/orders?user=${user.id}`
-        );
-        setOrders(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
+  //   const fetchOrders = async () => {
+  //     try {
+  //       const res = await axios.get(
+  //         `http://localhost:5000/orders?user=${user.id}`
+  //       );
+  //       setOrders(res.data);
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
 
-    fetchOrders();
-  }, [user]);
+  //   fetchOrders();
+  // }, [user]);
+
+
+
+if (user?.status === "Blocked") {
+   return <BlockedPage />;
+}
+
+
+useEffect(() => {
+  if (!user) return;
+
+  const fetchOrders = async () => {
+    try {
+      const res = await axios.get(
+        `http://localhost:5000/orders?user=${user.id}`
+      );
+
+      setOrders(res.data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  fetchOrders();
+
+  const interval = setInterval(fetchOrders, 2000);
+
+  return () => clearInterval(interval);
+
+}, [user]);
+
+
+
+
+
+
+
+
+
 
   return (
     <div className="min-h-screen relative overflow-hidden">

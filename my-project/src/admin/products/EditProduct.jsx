@@ -17,7 +17,7 @@ const EditProduct = () => {
     price: "",
     stock: "",
     img: "",
-    description: "",
+   
   });
 
   const getProduct = async () => {
@@ -51,8 +51,8 @@ const EditProduct = () => {
       !form.category ||
       !form.price ||
       !form.stock ||
-      !form.img ||
-      !form.description
+      !form.img 
+     
     ) {
       toast.error("Please fill all fields");
       return;
@@ -134,13 +134,7 @@ const EditProduct = () => {
             className="w-full bg-[#1b1611] border border-[#d4af37]/30 text-white placeholder-gray-500 rounded-xl p-3 focus:outline-none focus:border-[#d4af37] transition"
           />
 
-          <textarea
-            rows="5"
-            name="description"
-            value={form.description}
-            onChange={handleChange}
-            className="w-full bg-[#1b1611] border border-[#d4af37]/30 text-white placeholder-gray-500 rounded-xl p-3 focus:outline-none focus:border-[#d4af37] transition"
-          />
+        
 
           <div className="flex justify-end gap-4">
 

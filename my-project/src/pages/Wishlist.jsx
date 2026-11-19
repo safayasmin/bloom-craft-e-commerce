@@ -32,6 +32,9 @@ useEffect(() => {
 }, [user]);
 
 
+
+
+
 const handleAddToCart = async (product) => {
   // Redux cart-il already undo?
   const alreadyInCart = cart.some(

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Navbar from "../component/Navbar";
 
 import axios from "axios";
@@ -19,27 +19,35 @@ const Cart = () => {
 
   const dispatch = useDispatch();
 
-const cart = useSelector(
-  (state) => state.cart.cart
-);
-
-
+  const cart = useSelector(
+    (state) => state.cart.cart
+  );
 
   useEffect(() => {
-  if (!user) {
-    navigate("/login", { replace: true });
-    return;
-  }
+    if (!user) {
+      navigate("/login", { replace: true });
+      return;
+    }
 
-  const loadCart = async () => {
-    const res = await axios.get(
-      `http://localhost:5000/cart?userId=${user.id}`
-    );
-    dispatch(setCart(res.data));
-  };
+    let isMounted = true;
+    const loadCart = async () => {
+      try {
+        const res = await axios.get(
+          `http://localhost:5000/cart?userId=${user.id}`
+        );
+        if (isMounted) {
+          dispatch(setCart(res.data));
+        }
+      } catch (err) {
+        console.error("Error loading cart:", err);
+      }
+    };
 
-  loadCart();
-}, [user, dispatch]);
+    loadCart();
+    return () => {
+      isMounted = false;
+    };
+  }, [user, dispatch, navigate]);
 
 
   const totalItems = cart.reduce(

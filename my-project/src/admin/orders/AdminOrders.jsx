@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -19,22 +19,20 @@ const AdminOrders = () => {
 
   const ordersPerPage = 3;
 
-
-  const getOrders = async () => {
+  const getOrders = useCallback(async () => {
     try {
       const res = await axios.get(
         "http://localhost:5000/orders"
       );
-
       dispatch(setOrders(res.data));
     } catch (error) {
-      console.log(error);
+      console.error("Error fetching orders:", error);
     }
-  };
+  }, [dispatch]);
 
   useEffect(() => {
     getOrders();
-  }, []);
+  }, [getOrders]);
 
   
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -8,56 +8,41 @@ import {
 } from "../../redux/productSlice";
 
 const Products = () => {
-
-    const [search, setSearch] = useState("");
-    const [category, setCategory] = useState("All");
-
-const [currentPage, setCurrentPage] = useState(1);
-
-const productsPerPage = 3;
+  const [search, setSearch] = useState("");
+  const [category, setCategory] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 3;
 
   const dispatch = useDispatch();
-
   const products = useSelector((state) => state.products.products);
-  //Redux store-il ninn products array edukkunnu.
-
 
   // Fetch Products
-  const getProducts = async () => {
+  const getProducts = useCallback(async () => {
     try {
       const res = await axios.get("http://localhost:5000/Products");
-
       dispatch(setProducts(res.data));
     } catch (error) {
-      console.log(error);
+      console.error("Error fetching products:", error);
+    }
+  }, [dispatch]);
+
+  const handleDelete = async (id) => {
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this product?"
+    );
+    if (!confirmDelete) return;
+
+    try {
+      await axios.delete(`http://localhost:5000/Products/${id}`);
+      dispatch(deleteProduct(id));
+    } catch (error) {
+      console.error("Error deleting product:", error);
     }
   };
 
-
-  const handleDelete = async (id) => {
-  const confirmDelete = window.confirm(
-    "Are you sure you want to delete this product?"
-  );
-
-  if (!confirmDelete) return;
-  //Cancel cheythal function avide stop.
-
-  try {
-    await axios.delete(`http://localhost:5000/Products/${id}`);
-
-    dispatch(deleteProduct(id));
-  } catch (error) {
-    console.log(error);
-  }
-};
-
   useEffect(() => {
     getProducts();
-  }, []);
-
-  useEffect(() => {
-  console.log(products);
-}, [products]);
+  }, [getProducts]);
 
 
 

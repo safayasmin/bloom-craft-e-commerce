@@ -1,27 +1,24 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 const RecentOrders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
+    const getOrders = async () => {
+      try {
+        const res = await axios.get(
+          "http://localhost:5000/orders"
+        );
+        const lastFive = res.data.slice(-5).reverse();
+        setOrders(lastFive);
+      } catch (error) {
+        console.error("Error fetching recent orders:", error);
+      }
+    };
+
     getOrders();
   }, []);
-
-  const getOrders = async () => {
-    try {
-      const res = await axios.get(
-        "http://localhost:5000/orders"
-      );
-
-      // Last 5 orders
-      const lastFive = res.data.slice(-5).reverse();
-
-      setOrders(lastFive);
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   return (
     <div className="bg-[#1F1F1F] rounded-xl p-6 border border-[#2d2d2d] shadow-lg">

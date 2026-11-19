@@ -133,11 +133,15 @@ const handleWishlist = async () => {
         "
       >
         {/* IMAGE */}
-       <div className="relative overflow-hidden h-[340px]">
+       <div className="relative overflow-hidden h-[260px] sm:h-[300px] md:h-[340px]">
 
           <img
             src={product.img}
-            alt={product.title}
+            alt={product.title || "Handmade floral product"}
+            loading="lazy"
+            decoding="async"
+            width="340"
+            height="340"
             className="
               w-full
               h-full

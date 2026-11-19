@@ -1,5 +1,5 @@
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Navbar from "../component/Navbar";
 import axios from "axios";
 
@@ -10,8 +10,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { removeFromWishlist } from "../redux/wishlistSlice";
 import { setCart } from "../redux/cartSlice";
 import toast from "react-hot-toast";
-
-
 
 const Wishlist = () => {
   const navigate = useNavigate();
@@ -24,51 +22,46 @@ const Wishlist = () => {
     (state) => state.wishlist.wishlist
   );
 
-  
-useEffect(() => {
-  if (!user) {
-    navigate("/login", { replace: true });
-  }
-}, [user]);
+  useEffect(() => {
+    if (!user) {
+      navigate("/login", { replace: true });
+    }
+  }, [user, navigate]);
 
-
-
-
-
-const handleAddToCart = async (product) => {
-  // Redux cart-il already undo?
-  const alreadyInCart = cart.some(
-    (item) => item.productId === product.productId
-  );
-
-  if (alreadyInCart) {
-    toast.error("Product is already in Cart");
-    navigate("/cart"); // Cart page-lekku pokum
-    return;
-  }
-
-  try {
-    await axios.post("http://localhost:5000/cart", {
-      userId: user.id,
-      productId: product.productId,
-      title: product.title,
-      price: product.price,
-      img: product.img,
-      category: product.category,
-      quantity: 1,
-    });
-
-    const updated = await axios.get(
-      `http://localhost:5000/cart?userId=${user.id}`
+  const handleAddToCart = async (product) => {
+    // Redux cart-il already undo?
+    const alreadyInCart = cart.some(
+      (item) => item.productId === product.productId
     );
 
-    dispatch(setCart(updated.data));
+    if (alreadyInCart) {
+      toast.error("Product is already in Cart");
+      navigate("/cart");
+      return;
+    }
 
-    toast.success("Added to Cart");
-  } catch (err) {
-    toast.error("Something went wrong");
-  }
-};
+    try {
+      await axios.post("http://localhost:5000/cart", {
+        userId: user.id,
+        productId: product.productId,
+        title: product.title,
+        price: product.price,
+        img: product.img,
+        category: product.category,
+        quantity: 1,
+      });
+
+      const updated = await axios.get(
+        `http://localhost:5000/cart?userId=${user.id}`
+      );
+
+      dispatch(setCart(updated.data));
+      toast.success("Added to Cart");
+    } catch (err) {
+      console.error("Add to cart error:", err);
+      toast.error("Something went wrong");
+    }
+  };
 
 const handleRemove = async (id) => {
   await axios.delete(`http://localhost:5000/wishlist/${id}`);

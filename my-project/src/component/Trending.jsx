@@ -55,10 +55,14 @@ const Trending = () => {
                 delay: index * 0.1,
               }}
             >
-              <div className="relative h-[450px] overflow-hidden rounded-2xl">
+              <div className="relative h-[320px] sm:h-[380px] md:h-[420px] overflow-hidden rounded-2xl">
                 <img
                   src={product.image}
                   alt={product.name}
+                  loading="lazy"
+                  decoding="async"
+                  width="400"
+                  height="450"
                   className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
                 />
               </div>
@@ -68,13 +72,15 @@ const Trending = () => {
                   {product.name}
                 </h3>
 
-                <p className="text-gray-400 mb-6">{product.price}</p>
-<button
-  onClick={() => navigate("/explore")}
-  className="w-full border border-[#e9c349]/30 py-3 text-white uppercase tracking-[3px] text-xs hover:bg-[#e9c349] hover:text-black transition duration-300"
->
-  Explore Collection
-</button>
+                <p className="text-gray-400 mb-6">₹{product.price}</p>
+                <button
+                  type="button"
+                  aria-label={`Explore collection for ${product.name}`}
+                  onClick={() => navigate("/explore")}
+                  className="w-full rounded-full border border-[#e9c349]/30 py-3 text-white uppercase tracking-[2px] text-xs hover:bg-[#e9c349] hover:text-black transition duration-300 font-semibold cursor-pointer"
+                >
+                  Explore Collection
+                </button>
               </div>
             </motion.div>
           ))}

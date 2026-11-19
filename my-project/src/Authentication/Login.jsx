@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useAuth } from "../contexts/AuthContext";
 
-
 const Login = () => {
-  const { login, user } = useAuth();
+  const { login } = useAuth();
 
   const navigate = useNavigate();
   const location = useLocation();

@@ -4,7 +4,7 @@
       "id": "1",
       "title": "White anemones1",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "category": "realflower",
       "stock": "233",
       "description": "good"
@@ -13,14 +13,14 @@
       "id": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "category": "realflower"
     },
     {
       "id": "3",
       "title": "Pink roses",
       "price": "3099",
-      "img": "/images/rflower3.png",
+      "img": "/images/rflower3.webp",
       "category": "realflower",
       "stock": "1"
     },
@@ -28,147 +28,147 @@
       "id": "4",
       "title": "sunflower",
       "price": 2499,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "category": "realflower"
     },
     {
       "id": "5",
       "title": "Blue hydrangeas flower",
       "price": 1599,
-      "img": "/images/rflower5.png",
+      "img": "/images/rflower5.webp",
       "category": "realflower"
     },
     {
       "id": "6",
       "title": "White and pink flowers",
       "price": 1899,
-      "img": "/images/rflower6.png",
+      "img": "/images/rflower6.webp",
       "category": "realflower"
     },
     {
       "id": "7",
       "title": "Bouquet of lilies flower",
       "price": 2199,
-      "img": "/images/rflower7.png",
+      "img": "/images/rflower7.webp",
       "category": "realflower"
     },
     {
       "id": "8",
       "title": "Blue delphiniums flowers",
       "price": 2599,
-      "img": "/images/rflower8.png",
+      "img": "/images/rflower8.webp",
       "category": "realflower"
     },
     {
       "id": "9",
       "title": "Crochet sunFlower Bouquet",
       "price": 999,
-      "img": "/images/cflower1.png",
+      "img": "/images/cflower1.webp",
       "category": "crochet"
     },
     {
       "id": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "category": "crochet"
     },
     {
       "id": "11",
       "title": "soft flower crochet",
       "price": 1099,
-      "img": "/images/cflower3.png",
+      "img": "/images/cflower3.webp",
       "category": "crochet"
     },
     {
       "id": "12",
       "title": "White Lily Crochet",
       "price": 1199,
-      "img": "/images/cflower4.png",
+      "img": "/images/cflower4.webp",
       "category": "crochet"
     },
     {
       "id": "13",
       "title": "Mini Crochet Bouquet",
       "price": 799,
-      "img": "/images/cflower5.png",
+      "img": "/images/cflower5.webp",
       "category": "crochet"
     },
     {
       "id": "14",
       "title": "Elegant Crochet Orchid",
       "price": 1299,
-      "img": "/images/cflower6.png",
+      "img": "/images/cflower6.webp",
       "category": "crochet"
     },
     {
       "id": "15",
       "title": "Vintage Crochet Roses",
       "price": 1399,
-      "img": "/images/cflower7.png",
+      "img": "/images/cflower7.webp",
       "category": "crochet"
     },
     {
       "id": "16",
       "title": "Colorful Yarn Bouquet",
       "price": 999,
-      "img": "/images/cflower8.png",
+      "img": "/images/cflower8.webp",
       "category": "crochet"
     },
     {
       "id": "17",
       "title": "Wedding Ring Box",
       "price": 1999,
-      "img": "/images/wflower5.png",
+      "img": "/images/wflower5.webp",
       "category": "wedding"
     },
     {
       "id": "18",
       "title": "Bridal Bouquet Keepsake",
       "price": 2499,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "category": "wedding"
     },
     {
       "id": "19",
       "title": "Wedding Memory Frame",
       "price": 1799,
-      "img": "/images/wflower6.png",
+      "img": "/images/wflower6.webp",
       "category": "wedding"
     },
     {
       "id": "20",
       "title": "sunflower",
       "price": 1599,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "category": "wedding"
     },
     {
       "id": "21",
       "title": "Wedding Candle Set",
       "price": 1299,
-      "img": "/images/wflower1.png",
+      "img": "/images/wflower1.webp",
       "category": "wedding"
     },
     {
       "id": "22",
       "title": "Engagement Photo Frame",
       "price": 1499,
-      "img": "/images/wflower2.png",
+      "img": "/images/wflower2.webp",
       "category": "wedding"
     },
     {
       "id": "23",
       "title": "Bride Keepsake Box",
       "price": 1899,
-      "img": "/images/wflower3.png",
+      "img": "/images/wflower3.webp",
       "category": "wedding"
     },
     {
       "id": "24",
       "title": "Golden Wedding Decor",
       "price": 2999,
-      "img": "/images/wflower4.png",
+      "img": "/images/wflower4.webp",
       "category": "wedding"
     },
     {
@@ -342,6 +342,17 @@
       "role": "user",
       "status": "active",
       "id": "DYE8Xl4iugI"
+    },
+    {
+      "username": "ashif",
+      "fullName": "muhammad",
+      "email": "ashif@gmail.com",
+      "password": "ashif123",
+      "avatar": "https://i.pravatar.cc/150?u=ashif@gmail.com",
+      "createdAt": "2026-11-19T14:01:56.929Z",
+      "role": "user",
+      "status": "active",
+      "id": "cK8AIkKQH_I"
     }
   ],
   "cart": [
@@ -350,7 +361,7 @@
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "category": "realflower",
       "quantity": 1,
       "id": "RQuD6xeYTlE"
@@ -360,7 +371,7 @@
       "productId": "8",
       "title": "Blue delphiniums flowers",
       "price": 2599,
-      "img": "/images/rflower8.png",
+      "img": "/images/rflower8.webp",
       "category": "realflower",
       "quantity": 1,
       "id": "T3nHh2zsttg"
@@ -370,7 +381,7 @@
       "productId": "7",
       "title": "Bouquet of lilies flower",
       "price": 2199,
-      "img": "/images/rflower7.png",
+      "img": "/images/rflower7.webp",
       "category": "realflower",
       "quantity": 1,
       "id": "Hn_vmQ2wTzY"
@@ -380,7 +391,7 @@
       "productId": "9",
       "title": "Crochet sunFlower Bouquet",
       "price": 999,
-      "img": "/images/cflower1.png",
+      "img": "/images/cflower1.webp",
       "category": "crochet",
       "quantity": 1,
       "id": "uJ4rDTWpsDo"
@@ -390,7 +401,7 @@
       "productId": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "category": "crochet",
       "quantity": 1,
       "id": "XaoI8D2rsIM"
@@ -400,7 +411,7 @@
       "productId": "11",
       "title": "soft flower crochet",
       "price": 1099,
-      "img": "/images/cflower3.png",
+      "img": "/images/cflower3.webp",
       "category": "crochet",
       "quantity": 1,
       "id": "wpTDGAhhQmY"
@@ -421,651 +432,651 @@
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "id": "OIA7c5RkORE"
     },
     {
       "productId": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "id": "TbHqbO0YQ1A"
     },
     {
       "productId": "3",
       "title": "Pink roses",
       "price": 1999,
-      "img": "/images/rflower3.png",
+      "img": "/images/rflower3.webp",
       "id": "oyxr5TxY6xs"
     },
     {
       "productId": "4",
       "title": "sunflower",
       "price": 2499,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "id": "vq9rKrr0uwI"
     },
     {
       "productId": "5",
       "title": "Blue hydrangeas flower",
       "price": 1599,
-      "img": "/images/rflower5.png",
+      "img": "/images/rflower5.webp",
       "id": "LYDdbYruG14"
     },
     {
       "productId": "6",
       "title": "White and pink flowers",
       "price": 1899,
-      "img": "/images/rflower6.png",
+      "img": "/images/rflower6.webp",
       "id": "Cuker9HcFBw"
     },
     {
       "productId": "7",
       "title": "Bouquet of lilies flower",
       "price": 2199,
-      "img": "/images/rflower7.png",
+      "img": "/images/rflower7.webp",
       "id": "644wWSlvX_4"
     },
     {
       "productId": "8",
       "title": "Blue delphiniums flowers",
       "price": 2599,
-      "img": "/images/rflower8.png",
+      "img": "/images/rflower8.webp",
       "id": "1nX0YsXHKOA"
     },
     {
       "productId": "9",
       "title": "Crochet sunFlower Bouquet",
       "price": 999,
-      "img": "/images/cflower1.png",
+      "img": "/images/cflower1.webp",
       "id": "YNggmAVFafw"
     },
     {
       "productId": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "id": "GMVSiFLm2Qk"
     },
     {
       "productId": "11",
       "title": "soft flower crochet",
       "price": 1099,
-      "img": "/images/cflower3.png",
+      "img": "/images/cflower3.webp",
       "id": "p7RR26cRqfk"
     },
     {
       "productId": "12",
       "title": "White Lily Crochet",
       "price": 1199,
-      "img": "/images/cflower4.png",
+      "img": "/images/cflower4.webp",
       "id": "fna-V_JWZzE"
     },
     {
       "productId": "13",
       "title": "Mini Crochet Bouquet",
       "price": 799,
-      "img": "/images/cflower5.png",
+      "img": "/images/cflower5.webp",
       "id": "Bi-kM3MoI7k"
     },
     {
       "productId": "14",
       "title": "Elegant Crochet Orchid",
       "price": 1299,
-      "img": "/images/cflower6.png",
+      "img": "/images/cflower6.webp",
       "id": "CL5jx25EwYQ"
     },
     {
       "productId": "15",
       "title": "Vintage Crochet Roses",
       "price": 1399,
-      "img": "/images/cflower7.png",
+      "img": "/images/cflower7.webp",
       "id": "Q5vUDLUFwyA"
     },
     {
       "productId": "16",
       "title": "Colorful Yarn Bouquet",
       "price": 999,
-      "img": "/images/cflower8.png",
+      "img": "/images/cflower8.webp",
       "id": "1z_2cS15sbc"
     },
     {
       "productId": "17",
       "title": "Wedding Ring Box",
       "price": 1999,
-      "img": "/images/wflower5.png",
+      "img": "/images/wflower5.webp",
       "id": "y38FIB9oOnU"
     },
     {
       "productId": "18",
       "title": "Bridal Bouquet Keepsake",
       "price": 2499,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "id": "lZRd90oDVCU"
     },
     {
       "productId": "19",
       "title": "Wedding Memory Frame",
       "price": 1799,
-      "img": "/images/wflower6.png",
+      "img": "/images/wflower6.webp",
       "id": "DfO7Olv942U"
     },
     {
       "productId": "20",
       "title": "sunflower",
       "price": 1599,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "id": "jBXWLg0Me78"
     },
     {
       "productId": "21",
       "title": "Wedding Candle Set",
       "price": 1299,
-      "img": "/images/wflower1.png",
+      "img": "/images/wflower1.webp",
       "id": "_pkRizSyS-Y"
     },
     {
       "productId": "22",
       "title": "Engagement Photo Frame",
       "price": 1499,
-      "img": "/images/wflower2.png",
+      "img": "/images/wflower2.webp",
       "id": "OMnYSfvz6u4"
     },
     {
       "productId": "23",
       "title": "Bride Keepsake Box",
       "price": 1899,
-      "img": "/images/wflower3.png",
+      "img": "/images/wflower3.webp",
       "id": "iilD2HVC_CM"
     },
     {
       "productId": "24",
       "title": "Golden Wedding Decor",
       "price": 2999,
-      "img": "/images/wflower4.png",
+      "img": "/images/wflower4.webp",
       "id": "NckKRCmlG9E"
     },
     {
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "id": "-ErS4-XYX5Q"
     },
     {
       "productId": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "id": "NwmuJNRCxVA"
     },
     {
       "productId": "3",
       "title": "Pink roses",
       "price": 1999,
-      "img": "/images/rflower3.png",
+      "img": "/images/rflower3.webp",
       "id": "sulSy7zJqlE"
     },
     {
       "productId": "4",
       "title": "sunflower",
       "price": 2499,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "id": "YQF7WkU8yjE"
     },
     {
       "productId": "5",
       "title": "Blue hydrangeas flower",
       "price": 1599,
-      "img": "/images/rflower5.png",
+      "img": "/images/rflower5.webp",
       "id": "YTcqKEta3as"
     },
     {
       "productId": "6",
       "title": "White and pink flowers",
       "price": 1899,
-      "img": "/images/rflower6.png",
+      "img": "/images/rflower6.webp",
       "id": "TgdGwtvA56s"
     },
     {
       "productId": "7",
       "title": "Bouquet of lilies flower",
       "price": 2199,
-      "img": "/images/rflower7.png",
+      "img": "/images/rflower7.webp",
       "id": "0XTdNpkYmOc"
     },
     {
       "productId": "8",
       "title": "Blue delphiniums flowers",
       "price": 2599,
-      "img": "/images/rflower8.png",
+      "img": "/images/rflower8.webp",
       "id": "zllOb9vr0Dk"
     },
     {
       "productId": "9",
       "title": "Crochet sunFlower Bouquet",
       "price": 999,
-      "img": "/images/cflower1.png",
+      "img": "/images/cflower1.webp",
       "id": "7toz-oBU-Q4"
     },
     {
       "productId": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "id": "gvYlKPKcPbk"
     },
     {
       "productId": "11",
       "title": "soft flower crochet",
       "price": 1099,
-      "img": "/images/cflower3.png",
+      "img": "/images/cflower3.webp",
       "id": "Km8wA5-Y3Eo"
     },
     {
       "productId": "12",
       "title": "White Lily Crochet",
       "price": 1199,
-      "img": "/images/cflower4.png",
+      "img": "/images/cflower4.webp",
       "id": "rHdVpZmcg8o"
     },
     {
       "productId": "13",
       "title": "Mini Crochet Bouquet",
       "price": 799,
-      "img": "/images/cflower5.png",
+      "img": "/images/cflower5.webp",
       "id": "yT9eadiXsKM"
     },
     {
       "productId": "14",
       "title": "Elegant Crochet Orchid",
       "price": 1299,
-      "img": "/images/cflower6.png",
+      "img": "/images/cflower6.webp",
       "id": "a7c7lnaSRE4"
     },
     {
       "productId": "15",
       "title": "Vintage Crochet Roses",
       "price": 1399,
-      "img": "/images/cflower7.png",
+      "img": "/images/cflower7.webp",
       "id": "VJ_4hUKH6QI"
     },
     {
       "productId": "16",
       "title": "Colorful Yarn Bouquet",
       "price": 999,
-      "img": "/images/cflower8.png",
+      "img": "/images/cflower8.webp",
       "id": "pGZ_p09eEm0"
     },
     {
       "productId": "17",
       "title": "Wedding Ring Box",
       "price": 1999,
-      "img": "/images/wflower5.png",
+      "img": "/images/wflower5.webp",
       "id": "KzwDILN9_gA"
     },
     {
       "productId": "18",
       "title": "Bridal Bouquet Keepsake",
       "price": 2499,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "id": "Z3MmX4NvnY8"
     },
     {
       "productId": "19",
       "title": "Wedding Memory Frame",
       "price": 1799,
-      "img": "/images/wflower6.png",
+      "img": "/images/wflower6.webp",
       "id": "uC9yAcTvtCY"
     },
     {
       "productId": "20",
       "title": "sunflower",
       "price": 1599,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "id": "e01ECkiPw4s"
     },
     {
       "productId": "21",
       "title": "Wedding Candle Set",
       "price": 1299,
-      "img": "/images/wflower1.png",
+      "img": "/images/wflower1.webp",
       "id": "i33Si9zEvX0"
     },
     {
       "productId": "22",
       "title": "Engagement Photo Frame",
       "price": 1499,
-      "img": "/images/wflower2.png",
+      "img": "/images/wflower2.webp",
       "id": "PcLXXEIzEg8"
     },
     {
       "productId": "23",
       "title": "Bride Keepsake Box",
       "price": 1899,
-      "img": "/images/wflower3.png",
+      "img": "/images/wflower3.webp",
       "id": "ITCzLJNQ5dM"
     },
     {
       "productId": "24",
       "title": "Golden Wedding Decor",
       "price": 2999,
-      "img": "/images/wflower4.png",
+      "img": "/images/wflower4.webp",
       "id": "NAX36oJ4O28"
     },
     {
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "id": "UOSqSQDsT1s"
     },
     {
       "productId": "3",
       "title": "Pink roses",
       "price": 1999,
-      "img": "/images/rflower3.png",
+      "img": "/images/rflower3.webp",
       "id": "DHeJjHP_NRk"
     },
     {
       "productId": "4",
       "title": "sunflower",
       "price": 2499,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "id": "y4u3uKz9egc"
     },
     {
       "productId": "5",
       "title": "Blue hydrangeas flower",
       "price": 1599,
-      "img": "/images/rflower5.png",
+      "img": "/images/rflower5.webp",
       "id": "u6BLKyK_BpQ"
     },
     {
       "productId": "6",
       "title": "White and pink flowers",
       "price": 1899,
-      "img": "/images/rflower6.png",
+      "img": "/images/rflower6.webp",
       "id": "8iEbUBMtDWc"
     },
     {
       "productId": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "id": "x10VkxYGY5E"
     },
     {
       "productId": "7",
       "title": "Bouquet of lilies flower",
       "price": 2199,
-      "img": "/images/rflower7.png",
+      "img": "/images/rflower7.webp",
       "id": "vTjx1zggTrE"
     },
     {
       "productId": "8",
       "title": "Blue delphiniums flowers",
       "price": 2599,
-      "img": "/images/rflower8.png",
+      "img": "/images/rflower8.webp",
       "id": "mOJyQTslMtQ"
     },
     {
       "productId": "9",
       "title": "Crochet sunFlower Bouquet",
       "price": 999,
-      "img": "/images/cflower1.png",
+      "img": "/images/cflower1.webp",
       "id": "2fJsfxQzuOU"
     },
     {
       "productId": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "id": "qY7XSLSRnow"
     },
     {
       "productId": "11",
       "title": "soft flower crochet",
       "price": 1099,
-      "img": "/images/cflower3.png",
+      "img": "/images/cflower3.webp",
       "id": "-e7nKBerfMU"
     },
     {
       "productId": "12",
       "title": "White Lily Crochet",
       "price": 1199,
-      "img": "/images/cflower4.png",
+      "img": "/images/cflower4.webp",
       "id": "Tcur2qwrAJ4"
     },
     {
       "productId": "13",
       "title": "Mini Crochet Bouquet",
       "price": 799,
-      "img": "/images/cflower5.png",
+      "img": "/images/cflower5.webp",
       "id": "YDK2BjoxIvw"
     },
     {
       "productId": "14",
       "title": "Elegant Crochet Orchid",
       "price": 1299,
-      "img": "/images/cflower6.png",
+      "img": "/images/cflower6.webp",
       "id": "hU-KjuWvmao"
     },
     {
       "productId": "15",
       "title": "Vintage Crochet Roses",
       "price": 1399,
-      "img": "/images/cflower7.png",
+      "img": "/images/cflower7.webp",
       "id": "j-Ks-gp0V_w"
     },
     {
       "productId": "16",
       "title": "Colorful Yarn Bouquet",
       "price": 999,
-      "img": "/images/cflower8.png",
+      "img": "/images/cflower8.webp",
       "id": "gbjDVfiZ6Qw"
     },
     {
       "productId": "17",
       "title": "Wedding Ring Box",
       "price": 1999,
-      "img": "/images/wflower5.png",
+      "img": "/images/wflower5.webp",
       "id": "-6eaePXjsRw"
     },
     {
       "productId": "18",
       "title": "Bridal Bouquet Keepsake",
       "price": 2499,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "id": "qf-jIyLkts8"
     },
     {
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "id": "BcL-NIiHaSQ"
     },
     {
       "productId": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "id": "rYZvHU6x2tg"
     },
     {
       "productId": "3",
       "title": "Pink roses",
       "price": 1999,
-      "img": "/images/rflower3.png",
+      "img": "/images/rflower3.webp",
       "id": "5BLsJGyHMZI"
     },
     {
       "productId": "4",
       "title": "sunflower",
       "price": 2499,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "id": "ZXm7btKmzDY"
     },
     {
       "productId": "5",
       "title": "Blue hydrangeas flower",
       "price": 1599,
-      "img": "/images/rflower5.png",
+      "img": "/images/rflower5.webp",
       "id": "VHdJ5yqoAMg"
     },
     {
       "productId": "6",
       "title": "White and pink flowers",
       "price": 1899,
-      "img": "/images/rflower6.png",
+      "img": "/images/rflower6.webp",
       "id": "UW7sUHzC6Ko"
     },
     {
       "productId": "7",
       "title": "Bouquet of lilies flower",
       "price": 2199,
-      "img": "/images/rflower7.png",
+      "img": "/images/rflower7.webp",
       "id": "Xt4JqNZp4xY"
     },
     {
       "productId": "8",
       "title": "Blue delphiniums flowers",
       "price": 2599,
-      "img": "/images/rflower8.png",
+      "img": "/images/rflower8.webp",
       "id": "jtN48dH57rk"
     },
     {
       "productId": "9",
       "title": "Crochet sunFlower Bouquet",
       "price": 999,
-      "img": "/images/cflower1.png",
+      "img": "/images/cflower1.webp",
       "id": "uJt-cX02tfg"
     },
     {
       "productId": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "id": "8sm8kYphOhE"
     },
     {
       "productId": "11",
       "title": "soft flower crochet",
       "price": 1099,
-      "img": "/images/cflower3.png",
+      "img": "/images/cflower3.webp",
       "id": "bL9SXHcQ5ZY"
     },
     {
       "productId": "12",
       "title": "White Lily Crochet",
       "price": 1199,
-      "img": "/images/cflower4.png",
+      "img": "/images/cflower4.webp",
       "id": "ZjHXscOJf5Q"
     },
     {
       "productId": "13",
       "title": "Mini Crochet Bouquet",
       "price": 799,
-      "img": "/images/cflower5.png",
+      "img": "/images/cflower5.webp",
       "id": "-UaVc_jZ7PE"
     },
     {
       "productId": "14",
       "title": "Elegant Crochet Orchid",
       "price": 1299,
-      "img": "/images/cflower6.png",
+      "img": "/images/cflower6.webp",
       "id": "YLCtDLjsN6w"
     },
     {
       "productId": "15",
       "title": "Vintage Crochet Roses",
       "price": 1399,
-      "img": "/images/cflower7.png",
+      "img": "/images/cflower7.webp",
       "id": "bvBDUawMv3Q"
     },
     {
       "productId": "16",
       "title": "Colorful Yarn Bouquet",
       "price": 999,
-      "img": "/images/cflower8.png",
+      "img": "/images/cflower8.webp",
       "id": "u8MW6gYreP0"
     },
     {
       "productId": "17",
       "title": "Wedding Ring Box",
       "price": 1999,
-      "img": "/images/wflower5.png",
+      "img": "/images/wflower5.webp",
       "id": "oHILQwt5ClI"
     },
     {
       "productId": "18",
       "title": "Bridal Bouquet Keepsake",
       "price": 2499,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "id": "Evunxo5EY4E"
     },
     {
       "productId": "19",
       "title": "Wedding Memory Frame",
       "price": 1799,
-      "img": "/images/wflower6.png",
+      "img": "/images/wflower6.webp",
       "id": "bCgyxHm2e1o"
     },
     {
       "productId": "20",
       "title": "sunflower",
       "price": 1599,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "id": "6GCwQmF7GjM"
     },
     {
       "productId": "21",
       "title": "Wedding Candle Set",
       "price": 1299,
-      "img": "/images/wflower1.png",
+      "img": "/images/wflower1.webp",
       "id": "bndDDIiRm4E"
     },
     {
       "productId": "22",
       "title": "Engagement Photo Frame",
       "price": 1499,
-      "img": "/images/wflower2.png",
+      "img": "/images/wflower2.webp",
       "id": "jwFWjp4LjtY"
     },
     {
       "productId": "23",
       "title": "Bride Keepsake Box",
       "price": 1899,
-      "img": "/images/wflower3.png",
+      "img": "/images/wflower3.webp",
       "id": "DUHQMYYFpLA"
     },
     {
       "productId": "24",
       "title": "Golden Wedding Decor",
       "price": 2999,
-      "img": "/images/wflower4.png",
+      "img": "/images/wflower4.webp",
       "id": "f0QQQLOIGCE"
     },
     {
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "id": "3aBcK1Zj8qw"
     },
     {
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "id": "4dgmCfKWVNg"
     },
     {
       "productId": "5",
       "title": "Blue hydrangeas flower",
       "price": 1599,
-      "img": "/images/rflower5.png",
+      "img": "/images/rflower5.webp",
       "id": "Smng9gqsbeE"
     },
     {
@@ -1073,7 +1084,7 @@
       "productId": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "category": "crochet",
       "quantity": 1,
       "id": "WDL9BSIxKco"
@@ -1083,7 +1094,7 @@
       "productId": "11",
       "title": "soft flower crochet",
       "price": 1099,
-      "img": "/images/cflower3.png",
+      "img": "/images/cflower3.webp",
       "category": "crochet",
       "quantity": 1,
       "id": "ZXXmFcYBXJM"
@@ -1095,7 +1106,7 @@
       "productId": "4",
       "title": "sunflower",
       "price": 2499,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "category": "realflower",
       "id": "jnwzHUqQEa4"
     },
@@ -1104,7 +1115,7 @@
       "productId": "4",
       "title": "sunflower",
       "price": 2499,
-      "img": "/images/rflower4.png",
+      "img": "/images/rflower4.webp",
       "category": "realflower",
       "id": "Gzb0JrtmUfA"
     },
@@ -1113,7 +1124,7 @@
       "productId": "8",
       "title": "Blue delphiniums flowers",
       "price": 2599,
-      "img": "/images/rflower8.png",
+      "img": "/images/rflower8.webp",
       "category": "realflower",
       "id": "Hx5fsZng0eE"
     },
@@ -1122,7 +1133,7 @@
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "category": "realflower",
       "id": "3U5f5xTiZ3w"
     },
@@ -1131,7 +1142,7 @@
       "productId": "11",
       "title": "soft flower crochet",
       "price": 1099,
-      "img": "/images/cflower3.png",
+      "img": "/images/cflower3.webp",
       "category": "crochet",
       "id": "04fa-lGQsEQ"
     },
@@ -1140,7 +1151,7 @@
       "productId": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "category": "crochet",
       "id": "gC-K_B5ci2M"
     },
@@ -1149,7 +1160,7 @@
       "productId": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "category": "realflower",
       "id": "wnF5qLdsM4g"
     },
@@ -1158,7 +1169,7 @@
       "productId": "3",
       "title": "Pink roses",
       "price": 1999,
-      "img": "/images/rflower3.png",
+      "img": "/images/rflower3.webp",
       "category": "realflower",
       "id": "0FEsp68-vVw"
     },
@@ -1167,7 +1178,7 @@
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "category": "realflower",
       "id": "xrgQ3MRkA14"
     },
@@ -1176,7 +1187,7 @@
       "productId": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "category": "realflower",
       "id": "ugkiu3gtuO8"
     },
@@ -1185,7 +1196,7 @@
       "productId": "11",
       "title": "soft flower crochet",
       "price": 1099,
-      "img": "/images/cflower3.png",
+      "img": "/images/cflower3.webp",
       "category": "crochet",
       "id": "w2bvxTkiQjI"
     },
@@ -1194,7 +1205,7 @@
       "productId": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "category": "crochet",
       "id": "h6WIsi-cO9s"
     },
@@ -1203,7 +1214,7 @@
       "productId": "1",
       "title": "White anemones",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "category": "realflower",
       "id": "vihYlwFD_lw"
     },
@@ -1212,7 +1223,7 @@
       "productId": "9",
       "title": "Crochet sunFlower Bouquet",
       "price": 999,
-      "img": "/images/cflower1.png",
+      "img": "/images/cflower1.webp",
       "category": "crochet",
       "id": "t_kfpw34FaU"
     },
@@ -1221,7 +1232,7 @@
       "productId": "10",
       "title": "Handmade roses Set",
       "price": 899,
-      "img": "/images/cflower2.png",
+      "img": "/images/cflower2.webp",
       "category": "crochet",
       "id": "J6i8sySdJ_k"
     },
@@ -1230,7 +1241,7 @@
       "productId": "1",
       "title": "White anemones1",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "category": "realflower",
       "id": "NnxvGWsn624"
     },
@@ -1239,7 +1250,7 @@
       "productId": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "category": "realflower",
       "id": "EYmiA3TFgLQ"
     },
@@ -1248,7 +1259,7 @@
       "productId": "3",
       "title": "Pink roses",
       "price": "3099",
-      "img": "/images/rflower3.png",
+      "img": "/images/rflower3.webp",
       "category": "realflower",
       "id": "_P6fUFrN1no"
     },
@@ -1257,7 +1268,7 @@
       "productId": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "category": "realflower",
       "id": "_JicMC2Z2vQ"
     },
@@ -1266,7 +1277,7 @@
       "productId": "3",
       "title": "Pink roses",
       "price": "3099",
-      "img": "/images/rflower3.png",
+      "img": "/images/rflower3.webp",
       "category": "realflower",
       "id": "mTjjkrPT6IU"
     },
@@ -1275,7 +1286,7 @@
       "productId": "1",
       "title": "White anemones1",
       "price": 1499,
-      "img": "/images/rflower1.png",
+      "img": "/images/rflower1.webp",
       "category": "realflower",
       "id": "cXR6fg8M8-U"
     },
@@ -1284,7 +1295,7 @@
       "productId": "2",
       "title": "Wildflowers",
       "price": 1799,
-      "img": "/images/rflower2.png",
+      "img": "/images/rflower2.webp",
       "category": "realflower",
       "id": "ToJRNZqfl7o"
     },
@@ -1293,7 +1304,7 @@
       "productId": "3",
       "title": "Pink roses",
       "price": "3099",
-      "img": "/images/rflower3.png",
+      "img": "/images/rflower3.webp",
       "category": "realflower",
       "id": "oBKc7yeq_FM"
     },
@@ -1302,7 +1313,7 @@
       "productId": "8",
       "title": "Blue delphiniums flowers",
       "price": 2599,
-      "img": "/images/rflower8.png",
+      "img": "/images/rflower8.webp",
       "category": "realflower",
       "id": "bGZgoSU4OLE"
     }
@@ -1323,7 +1334,7 @@
           "productId": "4",
           "title": "sunflower",
           "price": 2499,
-          "img": "/images/rflower4.png",
+          "img": "/images/rflower4.webp",
           "category": "realflower",
           "quantity": 3,
           "id": "n5F3ixJD63A"
@@ -1356,7 +1367,7 @@
           "productId": "4",
           "title": "sunflower",
           "price": 2499,
-          "img": "/images/rflower4.png",
+          "img": "/images/rflower4.webp",
           "category": "realflower",
           "quantity": 3,
           "id": "Sw3Cue_ORrA"
@@ -1389,7 +1400,7 @@
           "productId": "8",
           "title": "Blue delphiniums flowers",
           "price": 2599,
-          "img": "/images/rflower8.png",
+          "img": "/images/rflower8.webp",
           "category": "realflower",
           "quantity": 4,
           "id": "-CNscm81guw"
@@ -1399,7 +1410,7 @@
           "productId": "9",
           "title": "Crochet sunFlower Bouquet",
           "price": 999,
-          "img": "/images/cflower1.png",
+          "img": "/images/cflower1.webp",
           "category": "crochet",
           "quantity": 1,
           "id": "clmb8XtFtn0"
@@ -1432,7 +1443,7 @@
           "productId": "4",
           "title": "sunflower",
           "price": 2499,
-          "img": "/images/rflower4.png",
+          "img": "/images/rflower4.webp",
           "category": "realflower",
           "quantity": 7,
           "id": "WNyI6GeGIvc"
@@ -1465,7 +1476,7 @@
           "productId": "2",
           "title": "Wildflowers",
           "price": 1799,
-          "img": "/images/rflower2.png",
+          "img": "/images/rflower2.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "OiVCentdYE8"
@@ -1475,7 +1486,7 @@
           "productId": "3",
           "title": "Pink roses",
           "price": 1999,
-          "img": "/images/rflower3.png",
+          "img": "/images/rflower3.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "5vaIUklhKxA"
@@ -1507,7 +1518,7 @@
           "productId": "2",
           "title": "Wildflowers",
           "price": 1799,
-          "img": "/images/rflower2.png",
+          "img": "/images/rflower2.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "M04H_OrFeR4"
@@ -1517,7 +1528,7 @@
           "productId": "3",
           "title": "Pink roses",
           "price": 1999,
-          "img": "/images/rflower3.png",
+          "img": "/images/rflower3.webp",
           "category": "realflower",
           "quantity": 3,
           "id": "M3SUU0O5FMw"
@@ -1549,7 +1560,7 @@
           "productId": "3",
           "title": "Pink roses",
           "price": 1999,
-          "img": "/images/rflower3.png",
+          "img": "/images/rflower3.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "jUAqnZdWz_s"
@@ -1581,7 +1592,7 @@
           "productId": "4",
           "title": "sunflower",
           "price": 2499,
-          "img": "/images/rflower4.png",
+          "img": "/images/rflower4.webp",
           "category": "realflower",
           "quantity": 4,
           "id": "d3vq45dLKBo"
@@ -1591,7 +1602,7 @@
           "productId": "14",
           "title": "Elegant Crochet Orchid",
           "price": 1299,
-          "img": "/images/cflower6.png",
+          "img": "/images/cflower6.webp",
           "category": "crochet",
           "quantity": 1,
           "id": "LYa3PEy3SRY"
@@ -1623,7 +1634,7 @@
           "productId": "1",
           "title": "White anemones",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "BzXD0vxnonc"
@@ -1633,7 +1644,7 @@
           "productId": "2",
           "title": "Wildflowers",
           "price": 1799,
-          "img": "/images/rflower2.png",
+          "img": "/images/rflower2.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "pvWuYppCm4U"
@@ -1643,7 +1654,7 @@
           "productId": "3",
           "title": "Pink roses",
           "price": 1999,
-          "img": "/images/rflower3.png",
+          "img": "/images/rflower3.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "F1ZAU80lDW0"
@@ -1675,7 +1686,7 @@
           "productId": "1",
           "title": "White anemones",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 2,
           "id": "0db_awxsooU"
@@ -1707,7 +1718,7 @@
           "productId": "4",
           "title": "sunflower",
           "price": 2499,
-          "img": "/images/rflower4.png",
+          "img": "/images/rflower4.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "7wx8SAqx3cE"
@@ -1739,7 +1750,7 @@
           "productId": "4",
           "title": "sunflower",
           "price": 2499,
-          "img": "/images/rflower4.png",
+          "img": "/images/rflower4.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "7wx8SAqx3cE"
@@ -1771,7 +1782,7 @@
           "productId": "4",
           "title": "sunflower",
           "price": 2499,
-          "img": "/images/rflower4.png",
+          "img": "/images/rflower4.webp",
           "category": "realflower",
           "quantity": 4,
           "id": "wXPKrAE31W8"
@@ -1803,7 +1814,7 @@
           "productId": "1",
           "title": "White anemones",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "Iwfau2yx5OQ"
@@ -1813,7 +1824,7 @@
           "productId": "2",
           "title": "Wildflowers",
           "price": 1799,
-          "img": "/images/rflower2.png",
+          "img": "/images/rflower2.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "uYJoIKygXz0"
@@ -1846,7 +1857,7 @@
           "productId": "3",
           "title": "Pink roses",
           "price": 1999,
-          "img": "/images/rflower3.png",
+          "img": "/images/rflower3.webp",
           "category": "realflower",
           "quantity": 2,
           "id": "NmdVL7T5Gl8"
@@ -1879,7 +1890,7 @@
           "productId": "1",
           "title": "White anemones",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "XtF95iQXx9w"
@@ -1889,7 +1900,7 @@
           "productId": "2",
           "title": "Wildflowers",
           "price": 1799,
-          "img": "/images/rflower2.png",
+          "img": "/images/rflower2.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "uVAf2LaaSVQ"
@@ -1922,7 +1933,7 @@
           "productId": "2",
           "title": "Wildflowers",
           "price": 1799,
-          "img": "/images/rflower2.png",
+          "img": "/images/rflower2.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "O23StnLE-mU"
@@ -1932,7 +1943,7 @@
           "productId": "3",
           "title": "Pink roses",
           "price": 1999,
-          "img": "/images/rflower3.png",
+          "img": "/images/rflower3.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "vRfdLGo3N5Q"
@@ -1942,7 +1953,7 @@
           "productId": "5",
           "title": "Blue hydrangeas flower",
           "price": 1599,
-          "img": "/images/rflower5.png",
+          "img": "/images/rflower5.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "q-jwP9ZJ11w"
@@ -1975,7 +1986,7 @@
           "productId": "1",
           "title": "White anemones",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "6xozs5sjglE"
@@ -1985,7 +1996,7 @@
           "productId": "2",
           "title": "Wildflowers",
           "price": 1799,
-          "img": "/images/rflower2.png",
+          "img": "/images/rflower2.webp",
           "category": "realflower",
           "quantity": 4,
           "id": "mmYDD32TOPo"
@@ -2018,7 +2029,7 @@
           "productId": "11",
           "title": "soft flower crochet",
           "price": 1099,
-          "img": "/images/cflower3.png",
+          "img": "/images/cflower3.webp",
           "category": "crochet",
           "quantity": 1,
           "id": "mevfm-WK3S0"
@@ -2028,7 +2039,7 @@
           "productId": "12",
           "title": "White Lily Crochet",
           "price": 1199,
-          "img": "/images/cflower4.png",
+          "img": "/images/cflower4.webp",
           "category": "crochet",
           "quantity": 1,
           "id": "3jcNL3_6ygI"
@@ -2038,7 +2049,7 @@
           "productId": "1",
           "title": "White anemones",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "EVTAJgMSUWI"
@@ -2071,7 +2082,7 @@
           "productId": "10",
           "title": "Handmade roses Set",
           "price": 899,
-          "img": "/images/cflower2.png",
+          "img": "/images/cflower2.webp",
           "category": "crochet",
           "quantity": 4,
           "id": "UauqO3lVrfs"
@@ -2104,7 +2115,7 @@
           "productId": "10",
           "title": "Handmade roses Set",
           "price": 899,
-          "img": "/images/cflower2.png",
+          "img": "/images/cflower2.webp",
           "category": "crochet",
           "quantity": 4,
           "id": "ocsJbck5AN4"
@@ -2114,7 +2125,7 @@
           "productId": "9",
           "title": "Crochet sunFlower Bouquet",
           "price": 999,
-          "img": "/images/cflower1.png",
+          "img": "/images/cflower1.webp",
           "category": "crochet",
           "quantity": 1,
           "id": "WWHco63hN2Y"
@@ -2147,7 +2158,7 @@
           "productId": "2",
           "title": "Wildflowers",
           "price": 1799,
-          "img": "/images/rflower2.png",
+          "img": "/images/rflower2.webp",
           "category": "realflower",
           "quantity": 6,
           "id": "5y3tPjyuYwY"
@@ -2157,7 +2168,7 @@
           "productId": "3",
           "title": "Pink roses",
           "price": "3099",
-          "img": "/images/rflower3.png",
+          "img": "/images/rflower3.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "kK-X2mqH40A"
@@ -2190,7 +2201,7 @@
           "productId": "1",
           "title": "White anemones1",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "JzcOkVo6BXA"
@@ -2200,7 +2211,7 @@
           "productId": "2",
           "title": "Wildflowers",
           "price": 1799,
-          "img": "/images/rflower2.png",
+          "img": "/images/rflower2.webp",
           "category": "realflower",
           "quantity": 5,
           "id": "tzDqyTtqJSY"
@@ -2232,7 +2243,7 @@
           "productId": "1",
           "title": "White anemones1",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 3,
           "id": "Sg1YU1jeE1A"
@@ -2265,7 +2276,7 @@
           "productId": "4",
           "title": "sunflower",
           "price": 2499,
-          "img": "/images/rflower4.png",
+          "img": "/images/rflower4.webp",
           "category": "realflower",
           "quantity": 8,
           "id": "UbKP00Qnhzc"
@@ -2297,7 +2308,7 @@
           "productId": "1",
           "title": "White anemones1",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 12,
           "id": "IrqyEYTfU10"
@@ -2329,7 +2340,7 @@
           "productId": "1",
           "title": "White anemones1",
           "price": 1499,
-          "img": "/images/rflower1.png",
+          "img": "/images/rflower1.webp",
           "category": "realflower",
           "quantity": 6,
           "id": "w8id7l-q_90"
@@ -2339,7 +2350,7 @@
           "productId": "4",
           "title": "sunflower",
           "price": 2499,
-          "img": "/images/rflower4.png",
+          "img": "/images/rflower4.webp",
           "category": "realflower",
           "quantity": 1,
           "id": "SfkW9N4EHCs"

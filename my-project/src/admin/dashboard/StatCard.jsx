@@ -1,43 +1,33 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 const StatCard = ({ title, type, color }) => {
   const [value, setValue] = useState(0);
 
   useEffect(() => {
+    const getData = async () => {
+      try {
+        if (type === "products") {
+          const res = await axios.get("http://localhost:5000/Products");
+          setValue(res.data.length);
+        } else if (type === "users") {
+          const res = await axios.get("http://localhost:5000/users");
+          setValue(res.data.length);
+        } else if (type === "orders") {
+          const res = await axios.get("http://localhost:5000/orders");
+          setValue(res.data.length);
+        } else if (type === "revenue") {
+          const res = await axios.get("http://localhost:5000/orders");
+          const totalRevenue = res.data.reduce((sum, order) => sum + (Number(order.total) || 0), 0);
+          setValue(totalRevenue);
+        }
+      } catch (error) {
+        console.error("Error loading stat data:", error);
+      }
+    };
+
     getData();
-  }, []);
-
-  const getData = async () => {
-    try {
-      if (type === "products") {
-        const res = await axios.get("http://localhost:5000/Products");
-        setValue(res.data.length);
-      }
-
-      if (type === "users") {
-        const res = await axios.get("http://localhost:5000/users");
-        setValue(res.data.length);
-      }
-
-      if (type === "orders") {
-        const res = await axios.get("http://localhost:5000/orders");
-        setValue(res.data.length);
-      }
-
-      if (type === "revenue") {
-        const res = await axios.get("http://localhost:5000/orders");
-
-        const totalRevenue = res.data.reduce((sum, order) => {
-          return sum + order.total;
-        }, 0);
-
-        setValue(totalRevenue);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  }, [type]);
 
   return (
     <div className="bg-[#1F1F1F] rounded-xl p-6 shadow-lg border border-[#2e2e2e]">

@@ -6,7 +6,7 @@ const heroData = {
     tag: "Seasonal Collection",
     title: "Real Flower",
     subtitle: "Arrangements",
-    image: "/images/rflowerhero.png",
+    image: "/images/rflowerhero.webp",
     description:
       "Freshly arranged flowers crafted by hand to bring beauty, elegance, and meaning to every occasion.",
     quote: "Every bloom tells a story.",
@@ -16,7 +16,7 @@ const heroData = {
     tag: "Handmade Collection",
     title: "Crochet Flower",
     subtitle: "Collection",
-    image: "/images/cflowerhero.png",
+    image: "/images/cflowerhero.webp",
     description:
       "Timeless crochet flowers handcrafted with care, designed to last forever and become cherished keepsakes.",
     quote: "Forever in Bloom.",

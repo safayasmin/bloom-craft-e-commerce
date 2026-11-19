@@ -1,7 +1,6 @@
 
-import React, { useState } from "react";
-import { FiHeart, FiShoppingCart, FiUser ,  FiMenu, FiX,
-} from "react-icons/fi";
+import { useState } from "react";
+import { FiHeart, FiShoppingCart, FiUser, FiMenu, FiX } from "./Icons";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useAuth } from "../contexts/AuthContext";
@@ -46,120 +45,180 @@ const cart = useSelector(
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-black/40 backdrop-blur-2xl border-b border-[#e9c349]/10 px-5 lg:px-10 py-5">
+    <nav className="sticky top-0 z-50 bg-black/60 backdrop-blur-2xl border-b border-[#e9c349]/20 px-4 sm:px-6 lg:px-10 py-4">
+      <div className="flex items-center justify-between max-w-7xl mx-auto">
+        {/* Mobile Hamburger & Logo */}
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            aria-label="Toggle navigation menu"
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="lg:hidden p-2 text-[#f5e6d3] hover:text-[#e9c349] transition focus:outline-none"
+          >
+            {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          </button>
 
-     <div className="flex items-center justify-between">
-      {/* Logo */}
-      <h1
-  onClick={() => navigate("/home")}
-  className="cursor-pointer text-3xl lg:text-4xl font-semibold tracking-wide text-[#f5e6d3] hover:text-[#e9c349] transition"
-  style={{ fontFamily: "Playfair Display, serif" }}
->
-  BloomCraft
-</h1>
+          <h1
+            onClick={() => navigate("/home")}
+            className="cursor-pointer text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-wide text-[#f5e6d3] hover:text-[#e9c349] transition"
+            style={{ fontFamily: "Playfair Display, serif" }}
+          >
+            BloomCraft
+          </h1>
+        </div>
 
-      {/* Navigation */}
-      <div
-  className="hidden lg:flex items-center gap-10 text-[15px] tracking-[3px] font-medium"
-  style={{ fontFamily: "Inter, sans-serif" }}
->
-        <Link className="hover:text-[#e9c349] transition" to="/home">
-          HOME
-        </Link>
-
-        <Link className="hover:text-[#e9c349] transition" to="/explore">
-          EXPLORE
-        </Link>
-
-        <Link className="hover:text-[#e9c349] transition" to="/category">
-          CATEGORIES
-        </Link>
-
-        <Link className="hover:text-[#e9c349] transition" to="/about">
-          ABOUT
-        </Link>
-
-        <Link className="hover:text-[#e9c349] transition" to="/orders">
-          ORDERS
-        </Link>
-      </div>
-
-      {/* Icons */}
-      <div className="flex items-center gap-6">
-
-        {/* Wishlist */}
+        {/* Desktop Navigation */}
         <div
-          onClick={() => handleProtectedRoute("/wishlist", "wishlist")}
-          className="relative cursor-pointer hover:text-[#e9c349] transition"
+          className="hidden lg:flex items-center gap-8 text-[14px] tracking-[2px] font-medium"
+          style={{ fontFamily: "Inter, sans-serif" }}
         >
-          <FiHeart size={22} />
-
-          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] min-w-[18px] h-[18px] rounded-full flex items-center justify-center">
-            {user ? wishlist?.length || 0 : 0}
-          </span>
+          <Link className="hover:text-[#e9c349] transition py-1" to="/home">
+            HOME
+          </Link>
+          <Link className="hover:text-[#e9c349] transition py-1" to="/explore">
+            EXPLORE
+          </Link>
+          <Link className="hover:text-[#e9c349] transition py-1" to="/category">
+            CATEGORIES
+          </Link>
+          <Link className="hover:text-[#e9c349] transition py-1" to="/about">
+            ABOUT
+          </Link>
+          <Link className="hover:text-[#e9c349] transition py-1" to="/orders">
+            ORDERS
+          </Link>
         </div>
 
+        {/* Action Icons */}
+        <div className="flex items-center gap-3 sm:gap-5">
+          {/* Wishlist */}
+          <button
+            type="button"
+            aria-label="View wishlist"
+            onClick={() => handleProtectedRoute("/wishlist", "wishlist")}
+            className="relative p-2 cursor-pointer hover:text-[#e9c349] text-[#f5e6d3] transition"
+          >
+            <FiHeart size={22} />
+            <span className="absolute top-0 right-0 bg-red-500 text-white text-[10px] min-w-[18px] h-[18px] rounded-full flex items-center justify-center font-bold px-1">
+              {user ? wishlist?.length || 0 : 0}
+            </span>
+          </button>
 
-        {/* Cart */}
-        <div
-          onClick={() => handleProtectedRoute("/cart", "cart")}
-          className="relative flex items-center gap-2 border border-[#e9c349] text-[#f5e6d3] px-4 py-2 rounded-full cursor-pointer hover:bg-[#e9c349] hover:text-black transition duration-300"
-        >
-          <FiShoppingCart size={18} />
+          {/* Cart */}
+          <button
+            type="button"
+            aria-label="View shopping cart"
+            onClick={() => handleProtectedRoute("/cart", "cart")}
+            className="relative flex items-center gap-1.5 sm:gap-2 border border-[#e9c349] text-[#f5e6d3] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full cursor-pointer hover:bg-[#e9c349] hover:text-black transition duration-300"
+          >
+            <FiShoppingCart size={18} />
+            <span className="uppercase tracking-wider text-xs hidden sm:inline">
+              Cart
+            </span>
+            <span className="bg-[#e9c349] text-black text-[10px] min-w-[18px] h-[18px] rounded-full flex items-center justify-center font-bold sm:static ml-1">
+              {user ? cart?.length || 0 : 0}
+            </span>
+          </button>
 
-          <span className="uppercase tracking-wider text-xs">
-            Cart
-          </span>
+          {/* User Account Dropdown */}
+          <div className="relative">
+            {!user ? (
+              <button
+                type="button"
+                aria-label="Sign in"
+                onClick={() =>
+                  navigate("/login", {
+                    state: { from: "/home" },
+                  })
+                }
+                className="p-2 text-[#f5e6d3] hover:text-[#e9c349] transition"
+              >
+                <FiUser size={22} />
+              </button>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  aria-label="User profile options"
+                  onClick={() => setOpen(!open)}
+                  className="p-2 text-[#f5e6d3] hover:text-[#e9c349] transition focus:outline-none"
+                >
+                  <FiUser size={22} />
+                </button>
 
-          <span className="absolute -top-2 -right-2 bg-[#e9c349] text-black text-[10px] min-w-[18px] h-[18px] rounded-full flex items-center justify-center font-bold">
-            {user ? cart?.length || 0 : 0}
-          </span>
+                {open && (
+                  <div className="absolute right-0 mt-3 w-40 rounded-xl bg-[#1b1b1b] border border-[#e9c349]/30 shadow-2xl overflow-hidden z-50">
+                    <div className="px-4 py-2 border-b border-white/10 text-xs text-gray-300 truncate">
+                      {user.email || user.username}
+                    </div>
+                    {user.role === "admin" && (
+                      <Link
+                        to="/admin/dashboard"
+                        onClick={() => setOpen(false)}
+                        className="block w-full px-4 py-2.5 text-left text-xs text-[#e9c349] hover:bg-[#e9c349]/10 transition"
+                      >
+                        Admin Panel
+                      </Link>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        logout();
+                        setOpen(false);
+                        navigate("/home");
+                      }}
+                      className="w-full px-4 py-2.5 text-left text-xs text-red-400 hover:bg-red-500/10 transition"
+                    >
+                      Logout
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
+          </div>
         </div>
-
-        {/* User */}
-        <div className="relative">
-
-          {!user ? (
-            <FiUser
-              size={23}
-              className="cursor-pointer hover:text-[#e9c349] transition"
-              onClick={() =>
-                navigate("/login", {
-                  state: { from: "/home" },
-                })
-              }
-            />
-          ) : (
-            <>
-              <FiUser
-                size={23}
-                className="cursor-pointer hover:text-[#e9c349] transition"
-                onClick={() => setOpen(!open)}
-              />
-
-              {open && (
-                <div className="absolute right-0 mt-3 w-36 rounded-xl bg-[#1b1b1b] border border-[#e9c349]/20 shadow-2xl overflow-hidden">
-
-                  <button
-                    onClick={() => {
-                      logout();
-                      setOpen(false);
-                      navigate("/home");
-                    }}
-                    className="w-full px-4 py-3 text-left text-red-400 hover:bg-red-500/10 transition"
-                  >
-                    Logout
-                  </button>
-
-                </div>
-              )}
-            </>
-          )}
-
-        </div>
-
       </div>
-      </div>
+
+      {/* Mobile Drawer Menu */}
+      {menuOpen && (
+        <div className="lg:hidden mt-4 pt-4 border-t border-[#e9c349]/20 flex flex-col gap-3 px-2 text-sm tracking-[2px]">
+          <Link
+            className="text-[#f5e6d3] hover:text-[#e9c349] py-2 transition"
+            to="/home"
+            onClick={() => setMenuOpen(false)}
+          >
+            HOME
+          </Link>
+          <Link
+            className="text-[#f5e6d3] hover:text-[#e9c349] py-2 transition"
+            to="/explore"
+            onClick={() => setMenuOpen(false)}
+          >
+            EXPLORE
+          </Link>
+          <Link
+            className="text-[#f5e6d3] hover:text-[#e9c349] py-2 transition"
+            to="/category"
+            onClick={() => setMenuOpen(false)}
+          >
+            CATEGORIES
+          </Link>
+          <Link
+            className="text-[#f5e6d3] hover:text-[#e9c349] py-2 transition"
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+          >
+            ABOUT
+          </Link>
+          <Link
+            className="text-[#f5e6d3] hover:text-[#e9c349] py-2 transition"
+            to="/orders"
+            onClick={() => setMenuOpen(false)}
+          >
+            ORDERS
+          </Link>
+        </div>
+      )}
     </nav>
   );
 };

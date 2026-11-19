@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,27 +7,25 @@ import { setUsers, updateUser } from "../../redux/userSlice";
 
 const Users = () => {
   const dispatch = useDispatch();
-
   const users = useSelector((state) => state.users.users);
 
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-
   const usersPerPage = 3;
 
   //Fetch Users
-  const getUsers = async () => {
+  const getUsers = useCallback(async () => {
     try {
       const res = await axios.get("http://localhost:5000/users");
       dispatch(setUsers(res.data));
     } catch (error) {
-      console.log(error);
+      console.error("Error fetching users:", error);
     }
-  };
+  }, [dispatch]);
 
   useEffect(() => {
     getUsers();
-  }, []);
+  }, [getUsers]);
 
 
   //Block / Unblock

@@ -72,8 +72,12 @@ const Choose = () => {
 
           <img
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKc0yLo0HCa1x2my1l2E6imkpJdOPbHcBmJ_RbvUJSyTURstLmHfwx3CV5dwJOUTepngN1aw1rv5oFoKTrpB7iNoxyjr_Vakyxo4y8cq9l1_WgMn1oVuzexK3iGkZEbtMgdqYPgVEb8oonbZ-qjNUUA7EBvdyUdY9E62lyVffBPRRlsecmeQKAjr9MvnkONdFrxbXYwwE0xVlrLX1gYv-l99tfTiEsZPPfCLG6sixUa4hlmMyJl-WAOxQ6HAeskP30TKOyJ-IyusU"
-            alt="Florist"
-            className="w-full rounded-3xl glass-panel"
+            alt="BloomCraft artisan florist crafting floral arrangement"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="450"
+            className="w-full rounded-3xl glass-panel object-cover"
           />
         </motion.div>
 

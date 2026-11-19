@@ -1,6 +1,4 @@
-import React from "react";
 import Navbar from "../component/Navbar";
-import Banner from "../component/Banner";
 import Curatedcln from "./Curatedcln";
 import Trending from "./Trending";
 import Choose from "./Choose";
@@ -10,14 +8,15 @@ import FlowerBouquetCollage from "./FlowerBouquetCollage";
 
 const Home = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-[#0d0d0d] text-white">
       <Navbar />
-      <FlowerBouquetCollage />
-      {/* <Banner /> */}
-      <Trending />
-      <Curatedcln />
-      <Choose />
-      <Testimonials />
+      <main>
+        <FlowerBouquetCollage />
+        <Trending />
+        <Curatedcln />
+        <Choose />
+        <Testimonials />
+      </main>
       <Footer />
     </div>
   );

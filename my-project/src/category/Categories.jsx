@@ -6,19 +6,19 @@ const Categories = () => {
     {
       id: 1,
       title: "Real Flowers",
-      image: "/images/rflowercard.png",
+      image: "/images/rflowercard.webp",
       link: "/realflower",
     },
     {
       id: 2,
       title: "Crochet Collection",
-      image: "/images/cflowercard.png",
+      image: "/images/cflowercard.webp",
       link: "/crochet",
     },
     {
       id: 3,
       title: "Wedding Collection",
-      image: "/images/wflower2.png",
+      image: "/images/wflower2.webp",
       link: "/wedding",
     },              
   ];
@@ -63,11 +63,15 @@ const Categories = () => {
             >
 
               {/* IMAGE WRAPPER (IMPORTANT FIX) */}
-              <div className="relative h-[450px] rounded-2xl overflow-hidden">
+              <div className="relative h-[320px] sm:h-[380px] md:h-[450px] rounded-2xl overflow-hidden">
 
                 <img
                   src={category.image}
-                  alt={category.title}
+                  alt={`Collection: ${category.title}`}
+                  loading="lazy"
+                  decoding="async"
+                  width="400"
+                  height="450"
                   className="
                     w-full h-full object-cover
                     transition duration-700

@@ -1,29 +1,32 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 
 const OrderDetails = () => {
   const { id } = useParams();
-
   const navigate = useNavigate();
-
   const [order, setOrder] = useState(null);
 
-  const getOrder = async () => {
-    try {
-      const res = await axios.get(
-        `http://localhost:5000/orders/${id}`
-      );
-
-      setOrder(res.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   useEffect(() => {
+    let isMounted = true;
+    const getOrder = async () => {
+      try {
+        const res = await axios.get(
+          `http://localhost:5000/orders/${id}`
+        );
+        if (isMounted) {
+          setOrder(res.data);
+        }
+      } catch (error) {
+        console.error("Error fetching order details:", error);
+      }
+    };
+
     getOrder();
-  }, []);
+    return () => {
+      isMounted = false;
+    };
+  }, [id]);
 
   if (!order) {
     return (

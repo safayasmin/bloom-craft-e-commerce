@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <section className="w-full h-[90vh] relative">
       <img
-        src="/images/flower.png"
+        src="/images/flower.webp"
         alt="Hero"
         className="w-full h-full object-cover"
       />

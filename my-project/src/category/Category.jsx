@@ -1,16 +1,15 @@
-import React from 'react'
 import Navbar from '../component/Navbar'
-import Hero from './Hero'
 import Categories from './Categories'
 import Footer from './Footer'
 
 const Category = () => {
   return (
-    <div>
-        <Navbar />
-        {/* <Hero /> */}
+    <div className="min-h-screen bg-[#0d0d0d] text-white">
+      <Navbar />
+      <main>
         <Categories />
-        <Footer />
+      </main>
+      <Footer />
     </div>
   )
 }

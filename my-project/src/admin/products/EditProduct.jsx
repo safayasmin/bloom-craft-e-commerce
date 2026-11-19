@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useNavigate, useParams } from "react-router-dom";
@@ -17,24 +17,28 @@ const EditProduct = () => {
     price: "",
     stock: "",
     img: "",
-   
   });
 
-  const getProduct = async () => {
-    try {
-      const res = await axios.get(
-        `http://localhost:5000/Products/${id}`
-      );
-
-      setForm(res.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   useEffect(() => {
+    let isMounted = true;
+    const getProduct = async () => {
+      try {
+        const res = await axios.get(
+          `http://localhost:5000/Products/${id}`
+        );
+        if (isMounted && res.data) {
+          setForm(res.data);
+        }
+      } catch (error) {
+        console.error("Error fetching product:", error);
+      }
+    };
+
     getProduct();
-  }, []);
+    return () => {
+      isMounted = false;
+    };
+  }, [id]);
 
   const handleChange = (e) => {
     setForm({

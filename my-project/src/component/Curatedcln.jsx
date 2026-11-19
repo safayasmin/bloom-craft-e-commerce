@@ -56,7 +56,7 @@ const Curatedcln = () => {
 
             {/* Image */}
             <img
-              src="/images/crose2.png"
+              src="/images/crose2.webp"
               alt="Real Flowers"
               className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
             />
@@ -88,7 +88,7 @@ const Curatedcln = () => {
 
               <button
                 onClick={() => navigate("/flowers")}
-                className="mt-8 px-7 py-3 rounded-full border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black transition duration-300 uppercase tracking-[3px] text-xs"
+                className="mt-6 px-6 py-2.5 rounded-full border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black transition duration-300 uppercase tracking-[2px] text-xs font-semibold"
               >
                 Explore Collection →
               </button>
@@ -104,15 +104,17 @@ const Curatedcln = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="md:col-span-2 relative group overflow-hidden rounded-3xl cursor-pointer"
+            className="md:col-span-2 relative group overflow-hidden rounded-3xl cursor-pointer min-h-[300px]"
           >
             {/* Border */}
             <div className="absolute inset-0 rounded-3xl border border-[#d4af37]/20 group-hover:border-[#d4af37] transition-all duration-500 z-20"></div>
 
             {/* Image */}
             <img
-              src="/images/cflowerhero.png"
-              alt="Crochet Collection"
+              src="/images/cflowerhero.webp"
+              alt="Handcrafted crochet flower bouquet collection"
+              loading="lazy"
+              decoding="async"
               className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
             />
 
@@ -123,27 +125,27 @@ const Curatedcln = () => {
             <div className="absolute inset-0 bg-[#d4af37]/0 group-hover:bg-[#d4af37]/10 transition duration-500"></div>
 
             {/* Content */}
-            <div className="absolute bottom-0 left-0 p-8 z-30">
+            <div className="absolute bottom-0 left-0 p-6 md:p-8 z-30">
 
               <span className="uppercase tracking-[4px] text-[#d4af37] text-[11px]">
                 Handmade Collection
               </span>
 
               <h2
-                className="text-white text-3xl mt-2"
+                className="text-white text-2xl md:text-3xl mt-2"
                 style={{ fontFamily: "Playfair Display, serif" }}
               >
                 Crochet Flowers
               </h2>
 
-              <p className="text-gray-300 mt-3 max-w-sm">
+              <p className="text-gray-300 mt-2 text-sm max-w-sm">
                 Beautiful handcrafted crochet flowers that last forever,
                 made with love and attention to every detail.
               </p>
 
               <button
                 onClick={() => navigate("/crochet")}
-                className="mt-6 px-6 py-2 rounded-full border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black transition duration-300 uppercase tracking-[3px] text-xs"
+                className="mt-4 px-6 py-2 rounded-full border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black transition duration-300 uppercase tracking-[2px] text-xs font-semibold"
               >
                 Explore Collection →
               </button>
@@ -158,15 +160,17 @@ const Curatedcln = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="md:col-span-2 relative group overflow-hidden rounded-3xl cursor-pointer"
+            className="md:col-span-2 relative group overflow-hidden rounded-3xl cursor-pointer min-h-[300px]"
           >
             {/* Border */}
             <div className="absolute inset-0 rounded-3xl border border-[#d4af37]/20 group-hover:border-[#d4af37] transition-all duration-500 z-20"></div>
 
             {/* Image */}
             <img
-              src="/images/crose3.png"
-              alt="Wedding Collection"
+              src="/images/crose3.webp"
+              alt="Elegant luxury wedding floral bouquets"
+              loading="lazy"
+              decoding="async"
               className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
             />
 
@@ -177,27 +181,27 @@ const Curatedcln = () => {
             <div className="absolute inset-0 bg-[#d4af37]/0 group-hover:bg-[#d4af37]/10 transition duration-500"></div>
 
             {/* Content */}
-            <div className="absolute bottom-0 left-0 p-8 z-30">
+            <div className="absolute bottom-0 left-0 p-6 md:p-8 z-30">
 
               <span className="uppercase tracking-[4px] text-[#d4af37] text-[11px]">
                 Wedding Collection
               </span>
 
               <h2
-                className="text-white text-3xl mt-2"
+                className="text-white text-2xl md:text-3xl mt-2"
                 style={{ fontFamily: "Playfair Display, serif" }}
               >
                 Weddings
               </h2>
 
-              <p className="text-gray-300 mt-3 max-w-sm">
+              <p className="text-gray-300 mt-2 text-sm max-w-sm">
                 Elegant floral arrangements designed to make your special
                 day unforgettable with timeless beauty.
               </p>
 
               <button
                 onClick={() => navigate("/wedding")}
-                className="mt-6 px-6 py-2 rounded-full border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black transition duration-300 uppercase tracking-[3px] text-xs"
+                className="mt-4 px-6 py-2 rounded-full border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-black transition duration-300 uppercase tracking-[2px] text-xs font-semibold"
               >
                 Explore Collection →
               </button>
@@ -268,7 +272,7 @@ export default Curatedcln;
 //         {/* Real Flowers */}
 //         <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-lg group border border-[#c89b8f]">
 //           <img
-//             src="/images/crose2.png"
+//             src="/images/crose2.webp"
 //             alt="Real Flowers"
 //             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
 //           />
@@ -296,7 +300,7 @@ export default Curatedcln;
 //         {/* Artisan Crochet */}
 //         <div className="md:col-span-2 relative overflow-hidden rounded-lg group border border-[#c89b8f]">
 //           <img
-//             src="/images/cflowerhero.png"
+//             src="/images/cflowerhero.webp"
 //             alt="Luxury Roses"
 //             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
 //           />
@@ -320,7 +324,7 @@ export default Curatedcln;
 //         {/* Weddings */}
 //         <div className="md:col-span-2 relative overflow-hidden rounded-lg group border border-[#c89b8f]">
 //           <img
-//             src="/images/crose3.png"
+//             src="/images/crose3.webp"
 //             alt="Signature Bouquet"
 //             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
 //           />
@@ -384,7 +388,7 @@ export default Curatedcln;
 //         {/* Real Flowers */}
 //         <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-lg group border border-[#c89b8f]">
 //           <img
-//             src="/images/crose2.png"
+//             src="/images/crose2.webp"
 //             alt="Real Flowers"
 //             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
 //           />
@@ -409,7 +413,7 @@ export default Curatedcln;
 //         {/* Artisan Crochet */}
 //         <div className="md:col-span-2 relative overflow-hidden rounded-lg group border border-[#c89b8f]">
 //           <img
-//             src="/images/cflowerhero.png"
+//             src="/images/cflowerhero.webp"
 //             alt="Luxury Roses"
 //             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
 //           />
@@ -430,7 +434,7 @@ export default Curatedcln;
 //         {/* Weddings */}
 //         <div className="md:col-span-2 relative overflow-hidden rounded-lg group border border-[#c89b8f]">
 //           <img
-//             src="/images/crose3.png"
+//             src="/images/crose3.webp"
 //             alt="Signature Bouquet"
 //             className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
 //           />

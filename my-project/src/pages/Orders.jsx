@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import axios from "axios";
 
@@ -6,52 +6,30 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
   const { user } = useAuth();
 
-  // useEffect(() => {
-  //   if (!user) return;
+  useEffect(() => {
+    if (!user || user?.status === "Blocked") return;
 
-  //   const fetchOrders = async () => {
-  //     try {
-  //       const res = await axios.get(
-  //         `http://localhost:5000/orders?user=${user.id}`
-  //       );
-  //       setOrders(res.data);
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   };
+    const fetchOrders = async () => {
+      try {
+        const res = await axios.get(
+          `http://localhost:5000/orders?user=${user.id}`
+        );
+        setOrders(res.data);
+      } catch (err) {
+        console.error("Error fetching orders:", err);
+      }
+    };
 
-  //   fetchOrders();
-  // }, [user]);
+    fetchOrders();
+  }, [user]);
 
-
-
-if (user?.status === "Blocked") {
-   return <BlockedPage />;
-}
-
-
-useEffect(() => {
-  if (!user) return;
-
-  const fetchOrders = async () => {
-    try {
-      const res = await axios.get(
-        `http://localhost:5000/orders?user=${user.id}`
-      );
-
-      setOrders(res.data);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  fetchOrders();
-
-  const interval = setInterval(fetchOrders, 2000);
-
-  return () => clearInterval(interval);
-
-}, [user]);
+  if (user?.status === "Blocked") {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-black text-[#d4af37] text-xl">
+        Your account has been blocked. Please contact support.
+      </div>
+    );
+  }
 
 
 

@@ -1,8 +1,6 @@
 
 import { useEffect, useMemo, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
-
 
 import SearchBar from "./SearchBar";
 import FilterSidebar from "./FilterSidebar";
@@ -10,7 +8,6 @@ import ProductGrid from "./ProductGrid";
 
 const Explore = () => {
   const [products, setProducts] = useState([]);
- 
 
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
@@ -18,78 +15,55 @@ const Explore = () => {
   const [price, setPrice] = useState("all");
 
   useEffect(() => {
+    let isMounted = true;
     axios
       .get("http://localhost:5000/Products")
       .then((res) => {
-
-        setProducts(res.data);
-
+        if (isMounted) {
+          setProducts(res.data);
+        }
       })
-      .catch((err) => console.log(err))
-      .finally(() => setLoading(false));
+      .catch((err) => console.error("Error loading products:", err))
+      .finally(() => {
+        if (isMounted) setLoading(false);
+      });
 
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
-
-
   const filteredProducts = useMemo(() => {
-
     return products.filter((product) => {
-      const matchSearch =
-        product.title
-          .toLowerCase()
-          .includes(search.toLowerCase());
+      const matchSearch = product.title
+        ?.toLowerCase()
+        .includes(search.toLowerCase());
 
       const matchCategory =
-        category === "all" ||
-        product.category === category;
+        category === "all" || product.category === category;
 
-      let matchPrice = true;
+      const numPrice = Number(product.price) || 0;
+      let matchPrice;
 
       switch (price) {
-
         case "0-1000":
-
-          matchPrice = product.price <= 1000;
-
+          matchPrice = numPrice <= 1000;
           break;
-
         case "1000-1500":
-
-          matchPrice =
-            product.price > 1000 &&
-            product.price <= 1500;
-
+          matchPrice = numPrice > 1000 && numPrice <= 1500;
           break;
-
         case "1500-2000":
-
-          matchPrice =
-            product.price > 1500 &&
-            product.price <= 2000;
-
+          matchPrice = numPrice > 1500 && numPrice <= 2000;
           break;
-
         case "2000+":
-
-          matchPrice =
-            product.price > 2000;
-
+          matchPrice = numPrice > 2000;
           break;
-
         default:
           matchPrice = true;
-
       }
 
-      return (
-        matchSearch &&
-        matchCategory &&
-        matchPrice
-      );
-
+      return matchSearch && matchCategory && matchPrice;
     });
-
   }, [products, search, category, price]);
 
   return (

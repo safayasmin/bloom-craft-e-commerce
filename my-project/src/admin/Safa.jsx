@@ -1,18 +1,37 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 
 const Safa = () => {
-    const [search,setsearch]=useState("");
-    const [user,setuser]=useState([]);
+    const [search, setsearch] = useState("");
+    const [user, setuser] = useState([]);
 
-    useEffect(()=>{
-        getuser();
-    },[]);
+    useEffect(() => {
+        let isMounted = true;
+        const fetchUsers = async () => {
+            try {
+                const res = await axios.get("http://localhost:5000/users");
+                if (isMounted) {
+                    setuser(res.data);
+                }
+            } catch (err) {
+                console.error("Error fetching users:", err);
+            }
+        };
 
-    const getuser=async()=>{
-        const res=await axios.get("http://localhost:5000/users");
-        setuser(res.data);
-    }
+        fetchUsers();
+        return () => {
+            isMounted = false;
+        };
+    }, []);
+
+    const getuser = async () => {
+        try {
+            const res = await axios.get("http://localhost:5000/users");
+            setuser(res.data);
+        } catch (err) {
+            console.error("Error refreshing users:", err);
+        }
+    };
 
     const handlesearch=user.filter((n)=>(
         n.username.toLowerCase().includes(search.toLowerCase()) ||
